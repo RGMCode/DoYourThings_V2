@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="DYT_DB" representedClassName="DYT_DB" syncable="YES" codeGenerationType="class">
+        <attribute name="dytCategory" optional="YES" attributeType="String"/>
+        <attribute name="dytDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dytDetailtext" optional="YES" attributeType="String"/>
+        <attribute name="dytPriority" optional="YES" attributeType="String"/>
+        <attribute name="dytTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dytTitel" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+</model>
