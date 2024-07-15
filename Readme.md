@@ -32,9 +32,9 @@ Zeigen Sie die Details jeder Aufgabe in einer separaten Ansicht an, um sicherzus
 
 ## Screenshots
 
-<img src="https://github.com/user-attachments/assets/628eef3e-ecae-441d-99aa-e1a0a652ac48" style="width:300px;"/>
-<img src="https://github.com/user-attachments/assets/935d7906-145a-4a09-925b-4328ddc2e30f" style="width:300px;"/>
-<img src="https://github.com/user-attachments/assets/551b55ad-c118-432d-91a0-8a073c9d6a14" style="width:300px;"/>
+<img src="https://github.com/user-attachments/assets/628eef3e-ecae-441d-99aa-e1a0a652ac48" style="width:270px;"/>
+<img src="https://github.com/user-attachments/assets/935d7906-145a-4a09-925b-4328ddc2e30f" style="width:270px;"/>
+<img src="https://github.com/user-attachments/assets/551b55ad-c118-432d-91a0-8a073c9d6a14" style="width:270px;"/>
 
 ## Verwendung
 
