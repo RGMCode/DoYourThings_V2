@@ -11,17 +11,18 @@ struct DoYourThingSettingView: View {
     @ObservedObject var viewModel: DoYourThingViewModel
     
     var body: some View {
-        NavigationView {
-            List {
-                NavigationLink(destination: DoYourThingManageCategoriesView(viewModel: viewModel)) {
-                    Text("Kategorien verwalten")
-                }
+        List {
+            NavigationLink(destination: DoYourThingManageCategoriesView(viewModel: viewModel)) {
+                Text("Kategorien verwalten")
             }
-            .navigationBarTitle("Einstellungen")
+            NavigationLink(destination: DoYourThingThemeChoiceView(viewModel: viewModel)) {
+                Text("Theme auswählen")
+            }
         }
+        .navigationBarTitle("Einstellungen", displayMode: .inline)
     }
 }
 
-
-
-
+#Preview {
+    DoYourThingSettingView(viewModel: DoYourThingViewModel(context: PersistenceController.shared.container.viewContext))
+}

@@ -13,15 +13,20 @@ struct DoYourThingAddView: View {
     @State private var title: String = ""
     @State private var detail: String = ""
     @State private var priority: String = "Mittel"
-    @State private var category: String = "Privat"
+    @State private var category: Category
+    
+    init(viewModel: DoYourThingViewModel) {
+        self.viewModel = viewModel
+        self._category = State(initialValue: viewModel.categories.first ?? Category(name: "Default", color: .gray))
+    }
     
     var body: some View {
         NavigationView {
             Form {
                 Section(header: Text("Kategorie")) {
                     Picker("Kategorie", selection: $category) {
-                        ForEach(viewModel.categories, id: \.self) { category in
-                            Text(category).tag(category)
+                        ForEach(viewModel.categories) { category in
+                            Text(category.name).tag(category)
                         }
                     }
                 }
@@ -48,10 +53,14 @@ struct DoYourThingAddView: View {
                 Section {
                     Button(action: {
                         let currentDate = Date()
-                        viewModel.addDYT(title: title, detail: detail, priority: priority, category: category, date: currentDate, time: currentDate)
+                        viewModel.addDYT(title: title, detail: detail, priority: priority, category: category.name, date: currentDate, time: currentDate)
                         presentationMode.wrappedValue.dismiss()
                     }) {
-                        Text("Aufgabe hinzufügen")
+                        HStack {
+                                Spacer()
+                                Text("Aufgabe hinzufügen")
+                                Spacer()
+                            }
                     }
                 }
             }
@@ -63,9 +72,6 @@ struct DoYourThingAddView: View {
     }
 }
 
-
-
-
-/*#Preview {
-    DoYourThingAddView()
-}*/
+#Preview {
+    DoYourThingAddView(viewModel: DoYourThingViewModel(context: PersistenceController.shared.container.viewContext))
+}

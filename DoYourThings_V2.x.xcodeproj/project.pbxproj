@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36ABC2672C4480720084CEF8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ABC2662C4480720084CEF8 /* UIColorExtension.swift */; };
+		36ABC26B2C45B42B0084CEF8 /* DoYourThingPriorityInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ABC26A2C45B42B0084CEF8 /* DoYourThingPriorityInformationView.swift */; };
 		36BB19612C42B191006E2C78 /* DoYourThings_V2_xApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19602C42B191006E2C78 /* DoYourThings_V2_xApp.swift */; };
 		36BB19632C42B191006E2C78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19622C42B191006E2C78 /* ContentView.swift */; };
 		36BB19652C42B192006E2C78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36BB19642C42B192006E2C78 /* Assets.xcassets */; };
 		36BB19682C42B192006E2C78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36BB19672C42B192006E2C78 /* Preview Assets.xcassets */; };
-		36BB19722C42B193006E2C78 /* DoYourThings_V2_xTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19712C42B193006E2C78 /* DoYourThings_V2_xTests.swift */; };
 		36BB197C2C42B193006E2C78 /* DoYourThings_V2_xUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB197B2C42B193006E2C78 /* DoYourThings_V2_xUITests.swift */; };
 		36BB197E2C42B193006E2C78 /* DoYourThings_V2_xUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB197D2C42B193006E2C78 /* DoYourThings_V2_xUITestsLaunchTests.swift */; };
 		36BB198F2C42B1E5006E2C78 /* DoYourThing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB198E2C42B1E5006E2C78 /* DoYourThing.swift */; };
@@ -22,9 +23,13 @@
 		36BB199D2C42B349006E2C78 /* DoYourThingManageCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB199C2C42B349006E2C78 /* DoYourThingManageCategoriesView.swift */; };
 		36BB199F2C42B3AF006E2C78 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB199E2C42B3AF006E2C78 /* PersistenceController.swift */; };
 		36BB19A32C42BC0F006E2C78 /* DoYourThingModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19A12C42BC0F006E2C78 /* DoYourThingModel.xcdatamodeld */; };
-		36BB19A52C42BF3A006E2C78 /* DoYourThingFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19A42C42BF3A006E2C78 /* DoYourThingFilterView.swift */; };
 		36BB19A72C42C0D4006E2C78 /* DoYourThingEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19A62C42C0D4006E2C78 /* DoYourThingEditView.swift */; };
 		36BB19A92C4313AC006E2C78 /* DoYourThingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19A82C4313AC006E2C78 /* DoYourThingViewModelTests.swift */; };
+		36BB19AD2C445E0B006E2C78 /* DoYourThingCategoriesEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19AC2C445E0B006E2C78 /* DoYourThingCategoriesEditView.swift */; };
+		36BB19AF2C44692F006E2C78 /* DoYourThingSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19AE2C44692F006E2C78 /* DoYourThingSearchView.swift */; };
+		36BB19B12C446E3E006E2C78 /* DoYourThingCategoriesAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19B02C446E3E006E2C78 /* DoYourThingCategoriesAddView.swift */; };
+		36BB19B32C446EA8006E2C78 /* DoYourThingThemeChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19B22C446EA8006E2C78 /* DoYourThingThemeChoiceView.swift */; };
+		36BB19B52C446F2B006E2C78 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19B42C446F2B006E2C78 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36ABC2662C4480720084CEF8 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		36ABC26A2C45B42B0084CEF8 /* DoYourThingPriorityInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingPriorityInformationView.swift; sourceTree = "<group>"; };
 		36BB195D2C42B191006E2C78 /* DoYourThings_V2.x.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoYourThings_V2.x.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BB19602C42B191006E2C78 /* DoYourThings_V2_xApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThings_V2_xApp.swift; sourceTree = "<group>"; };
 		36BB19622C42B191006E2C78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		36BB19642C42B192006E2C78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36BB19672C42B192006E2C78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		36BB196D2C42B193006E2C78 /* DoYourThings_V2.xTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoYourThings_V2.xTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		36BB19712C42B193006E2C78 /* DoYourThings_V2_xTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThings_V2_xTests.swift; sourceTree = "<group>"; };
 		36BB19772C42B193006E2C78 /* DoYourThings_V2.xUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoYourThings_V2.xUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BB197B2C42B193006E2C78 /* DoYourThings_V2_xUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThings_V2_xUITests.swift; sourceTree = "<group>"; };
 		36BB197D2C42B193006E2C78 /* DoYourThings_V2_xUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThings_V2_xUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -64,9 +70,13 @@
 		36BB199C2C42B349006E2C78 /* DoYourThingManageCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingManageCategoriesView.swift; sourceTree = "<group>"; };
 		36BB199E2C42B3AF006E2C78 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		36BB19A22C42BC0F006E2C78 /* DoYourThingModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoYourThingModel.xcdatamodel; sourceTree = "<group>"; };
-		36BB19A42C42BF3A006E2C78 /* DoYourThingFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingFilterView.swift; sourceTree = "<group>"; };
 		36BB19A62C42C0D4006E2C78 /* DoYourThingEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingEditView.swift; sourceTree = "<group>"; };
 		36BB19A82C4313AC006E2C78 /* DoYourThingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingViewModelTests.swift; sourceTree = "<group>"; };
+		36BB19AC2C445E0B006E2C78 /* DoYourThingCategoriesEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingCategoriesEditView.swift; sourceTree = "<group>"; };
+		36BB19AE2C44692F006E2C78 /* DoYourThingSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingSearchView.swift; sourceTree = "<group>"; };
+		36BB19B02C446E3E006E2C78 /* DoYourThingCategoriesAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingCategoriesAddView.swift; sourceTree = "<group>"; };
+		36BB19B22C446EA8006E2C78 /* DoYourThingThemeChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingThemeChoiceView.swift; sourceTree = "<group>"; };
+		36BB19B42C446F2B006E2C78 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36ABC2652C44805C0084CEF8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				36ABC2662C4480720084CEF8 /* UIColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		36BB19542C42B191006E2C78 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +136,7 @@
 		36BB195F2C42B191006E2C78 /* DoYourThings_V2.x */ = {
 			isa = PBXGroup;
 			children = (
+				36ABC2652C44805C0084CEF8 /* Extension */,
 				36BB19A02C42B5FE006E2C78 /* Controller */,
 				36BB19922C42B224006E2C78 /* DataBase */,
 				36BB198D2C42B1CD006E2C78 /* View */,
@@ -142,7 +161,6 @@
 		36BB19702C42B193006E2C78 /* DoYourThings_V2.xTests */ = {
 			isa = PBXGroup;
 			children = (
-				36BB19712C42B193006E2C78 /* DoYourThings_V2_xTests.swift */,
 				36BB19A82C4313AC006E2C78 /* DoYourThingViewModelTests.swift */,
 			);
 			path = DoYourThings_V2.xTests;
@@ -161,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				36BB198E2C42B1E5006E2C78 /* DoYourThing.swift */,
+				36BB19B42C446F2B006E2C78 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,12 +195,16 @@
 		36BB198D2C42B1CD006E2C78 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				36BB199A2C42B336006E2C78 /* DoYourThingSettingView.swift */,
+				36BB19A62C42C0D4006E2C78 /* DoYourThingEditView.swift */,
 				36BB19962C42B2E5006E2C78 /* DoYourThingDetailView.swift */,
 				36BB19982C42B2FB006E2C78 /* DoYourThingAddView.swift */,
-				36BB199A2C42B336006E2C78 /* DoYourThingSettingView.swift */,
+				36BB19AE2C44692F006E2C78 /* DoYourThingSearchView.swift */,
+				36BB19B02C446E3E006E2C78 /* DoYourThingCategoriesAddView.swift */,
+				36BB19AC2C445E0B006E2C78 /* DoYourThingCategoriesEditView.swift */,
 				36BB199C2C42B349006E2C78 /* DoYourThingManageCategoriesView.swift */,
-				36BB19A42C42BF3A006E2C78 /* DoYourThingFilterView.swift */,
-				36BB19A62C42C0D4006E2C78 /* DoYourThingEditView.swift */,
+				36BB19B22C446EA8006E2C78 /* DoYourThingThemeChoiceView.swift */,
+				36ABC26A2C45B42B0084CEF8 /* DoYourThingPriorityInformationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,17 +355,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36BB19B32C446EA8006E2C78 /* DoYourThingThemeChoiceView.swift in Sources */,
 				36BB19A32C42BC0F006E2C78 /* DoYourThingModel.xcdatamodeld in Sources */,
-				36BB19A52C42BF3A006E2C78 /* DoYourThingFilterView.swift in Sources */,
 				36BB19992C42B2FB006E2C78 /* DoYourThingAddView.swift in Sources */,
+				36BB19AF2C44692F006E2C78 /* DoYourThingSearchView.swift in Sources */,
+				36ABC2672C4480720084CEF8 /* UIColorExtension.swift in Sources */,
 				36BB198F2C42B1E5006E2C78 /* DoYourThing.swift in Sources */,
 				36BB199D2C42B349006E2C78 /* DoYourThingManageCategoriesView.swift in Sources */,
 				36BB19A72C42C0D4006E2C78 /* DoYourThingEditView.swift in Sources */,
 				36BB19972C42B2E5006E2C78 /* DoYourThingDetailView.swift in Sources */,
 				36BB199B2C42B336006E2C78 /* DoYourThingSettingView.swift in Sources */,
 				36BB19912C42B1FF006E2C78 /* DoYourThingViewModel.swift in Sources */,
+				36BB19B52C446F2B006E2C78 /* Category.swift in Sources */,
+				36BB19B12C446E3E006E2C78 /* DoYourThingCategoriesAddView.swift in Sources */,
 				36BB19632C42B191006E2C78 /* ContentView.swift in Sources */,
 				36BB19612C42B191006E2C78 /* DoYourThings_V2_xApp.swift in Sources */,
+				36ABC26B2C45B42B0084CEF8 /* DoYourThingPriorityInformationView.swift in Sources */,
+				36BB19AD2C445E0B006E2C78 /* DoYourThingCategoriesEditView.swift in Sources */,
 				36BB199F2C42B3AF006E2C78 /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +380,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36BB19722C42B193006E2C78 /* DoYourThings_V2_xTests.swift in Sources */,
 				36BB19A92C4313AC006E2C78 /* DoYourThingViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

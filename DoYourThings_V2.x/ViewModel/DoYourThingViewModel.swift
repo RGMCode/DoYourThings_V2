@@ -8,10 +8,17 @@
 import Foundation
 import CoreData
 import Combine
+import SwiftUI
 
 class DoYourThingViewModel: ObservableObject {
     @Published var dyts: [DoYourThing] = []
-    @Published var categories: [String] = ["Privat", "Arbeit"]
+    @Published var searchResults: [DoYourThing] = []
+    @Published var categories: [Category] = [
+        Category(name: "Privat", color: .blue),
+        Category(name: "Arbeit", color: .green)
+    ]
+    @Published var theme: String = "Light" // Default theme
+    @Published var themeIconColor: Color = .teal // Default theme color
     
     private var context: NSManagedObjectContext
     
@@ -19,6 +26,10 @@ class DoYourThingViewModel: ObservableObject {
         self.context = context
         fetchDYT()
     }
+    
+    func updateTheme(to theme: String) {
+            self.theme = theme
+        }
     
     func fetchDYT() {
         let request: NSFetchRequest<DYT_DB> = DYT_DB.fetchRequest()
@@ -34,8 +45,10 @@ class DoYourThingViewModel: ObservableObject {
                             dytTime: task.dytTime ?? Date(),
                             dytDate: task.dytDate ?? Date())
             }
+            self.searchResults = self.dyts
+            print("Fetched \(self.dyts.count) tasks")
         } catch {
-            print("Error fetching tasks: \(error)")
+            print("Fehler beim Abrufen der Aufgaben: \(error)")
         }
     }
     
@@ -51,9 +64,10 @@ class DoYourThingViewModel: ObservableObject {
         
         do {
             try context.save()
+            print("Task hinzugefügt: \(newTask)")
             fetchDYT()
         } catch {
-            print("Error saving new task: \(error)")
+            print("Fehler beim Speichern der neuen Aufgabe: \(error)")
         }
     }
     
@@ -66,10 +80,11 @@ class DoYourThingViewModel: ObservableObject {
             if let taskToDelete = results.first {
                 context.delete(taskToDelete)
                 try context.save()
+                print("Task gelöscht: \(task)")
                 fetchDYT()
             }
         } catch {
-            print("Error deleting task: \(error)")
+            print("Fehler beim Löschen der Aufgabe: \(error)")
         }
     }
     
@@ -88,23 +103,26 @@ class DoYourThingViewModel: ObservableObject {
                 taskToUpdate.dytTime = task.dytTime
                 
                 try context.save()
+                print("Task aktualisiert: \(taskToUpdate)")
                 fetchDYT()
+            } else {
+                print("Aufgabe nicht gefunden für id: \(task.id)")
             }
         } catch {
-            print("Error updating task: \(error)")
+            print("Fehler beim Aktualisieren der Aufgabe: \(error)")
         }
     }
     
-    func addCategory(name: String) {
-        if !categories.contains(name) {
-            categories.append(name)
+    func addCategory(name: String, color: Color) {
+        if !categories.contains(where: { $0.name == name }) {
+            categories.append(Category(name: name, color: color))
+            print("Kategorie hinzugefügt: \(name)")
         }
     }
     
-    func updateCategory(oldName: String, newName: String) {
-        if let index = categories.firstIndex(of: oldName) {
-            categories[index] = newName
-            // Optionally update category name in all tasks
+    func updateCategory(oldName: String, newName: String, color: Color) {
+        if let index = categories.firstIndex(where: { $0.name == oldName }) {
+            categories[index] = Category(name: newName, color: color)
             let request: NSFetchRequest<DYT_DB> = DYT_DB.fetchRequest()
             request.predicate = NSPredicate(format: "dytCategory == %@", oldName)
             
@@ -114,19 +132,18 @@ class DoYourThingViewModel: ObservableObject {
                     task.dytCategory = newName
                 }
                 try context.save()
+                print("Kategorie aktualisiert: \(oldName) zu \(newName)")
                 fetchDYT()
             } catch {
-                print("Error updating tasks for category \(oldName): \(error)")
+                print("Fehler beim Aktualisieren der Aufgaben für Kategorie \(oldName): \(error)")
             }
         }
     }
     
     func deleteCategory(name: String) {
-        if let index = categories.firstIndex(of: name) {
+        print("Kategorie wird gelöscht: \(name)") // Debugging-Informationen
+        if let index = categories.firstIndex(where: { $0.name == name }) {
             categories.remove(at: index)
-            // Optionally, you can also remove tasks under this category
-            dyts.removeAll { $0.dytCategory == name }
-            // To remove the tasks from Core Data as well
             let request: NSFetchRequest<DYT_DB> = DYT_DB.fetchRequest()
             request.predicate = NSPredicate(format: "dytCategory == %@", name)
             do {
@@ -135,12 +152,19 @@ class DoYourThingViewModel: ObservableObject {
                     context.delete(task)
                 }
                 try context.save()
+                print("Kategorie und zugehörige Aufgaben gelöscht: \(name)") // Debugging-Informationen
                 fetchDYT()
             } catch {
-                print("Error deleting tasks for category \(name): \(error)")
+                print("Fehler beim Löschen der Aufgaben für Kategorie \(name): \(error)")
             }
         }
     }
+    
+    func searchTasks(query: String) {
+        if query.isEmpty {
+            searchResults = dyts
+        } else {
+            searchResults = dyts.filter { $0.dytTitel.localizedCaseInsensitiveContains(query) || $0.dytDetailtext.localizedCaseInsensitiveContains(query) }
+        }
+    }
 }
-
-

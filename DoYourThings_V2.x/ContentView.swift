@@ -12,54 +12,78 @@ struct ContentView: View {
     @State private var selectedCategory: String = "Privat"
     @State private var filter: String = "Datum und Priorität"
     @State private var isPresentingAddView = false
-    @State private var isPresentingSettingsView = false
     @State private var isPickerPresented = false
-    
+    @State private var isPresentingSearchView = false
+    @State private var isPresentingInfoView = false
+
     var body: some View {
         NavigationView {
             VStack {
                 Picker("Kategorie", selection: $selectedCategory) {
-                    ForEach(viewModel.categories, id: \.self) { category in
-                        Text(category)
-                            .tag(category)
+                    ForEach(viewModel.categories, id: \.name) { category in
+                        Text(category.name).tag(category.name)
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 .padding()
-                                
+                .background(viewModel.categories.first(where: { $0.name == selectedCategory })?.color ?? Color.clear)
+                .cornerRadius(8)
+                .padding()
+
                 List {
                     ForEach(filteredTasks()) { dyt in
                         NavigationLink(destination: DoYourThingDetailView(dyt: dyt, viewModel: viewModel)) {
                             HStack {
+                                Image(systemName: "circle.hexagongrid.circle")
+                                    .foregroundColor(priorityColor(priority: dyt.dytPriority))
+                                    .font(.system(size: 25))
                                 Text(dyt.dytTitel)
                                 Spacer()
-                                Circle()
-                                    .fill(priorityColor(priority: dyt.dytPriority))
-                                    .frame(width: 10, height: 10)
                             }
                         }
                     }
                     .onDelete(perform: deleteItems)
                 }
             }
-            .navigationBarTitle("Do Your Things")
             .navigationBarItems(
-                leading: Button(action: {
-                    isPresentingAddView = true
-                }) {
-                    Image(systemName: "note.text.badge.plus")
-                        .foregroundColor(.green)
-                        .font(.system(size: 30))
-                }
-                .sheet(isPresented: $isPresentingAddView) {
-                    DoYourThingAddView(viewModel: viewModel)
+                leading: HStack {
+                    Button(action: {
+                        isPresentingAddView = true
+                    }) {
+                        Image(systemName: "note.text.badge.plus")
+                            .foregroundColor(viewModel.themeIconColor)
+                            .font(.system(size: 30))
+                    }
+                    .sheet(isPresented: $isPresentingAddView) {
+                        DoYourThingAddView(viewModel: viewModel)
+                    }
+                    Button(action: {
+                        isPresentingSearchView = true
+                    }) {
+                        Image(systemName: "magnifyingglass")
+                            .foregroundColor(viewModel.themeIconColor)
+                            .font(.system(size: 30))
+                    }
+                    .sheet(isPresented: $isPresentingSearchView) {
+                        DoYourThingSearchView(viewModel: viewModel)
+                    }
                 },
                 trailing: HStack {
+                    Button(action: {
+                        isPresentingInfoView = true
+                    }) {
+                        Image(systemName: "info.circle")
+                            .foregroundColor(viewModel.themeIconColor)
+                            .font(.system(size: 30))
+                    }
+                    .sheet(isPresented: $isPresentingInfoView) {
+                        DoYourThingPriorityInformationView()
+                    }
                     Button(action: {
                         isPickerPresented = true
                     }) {
                         Image(systemName: "line.3.horizontal.circle.fill")
-                            .foregroundColor(.teal)
+                            .foregroundColor(viewModel.themeIconColor)
                             .font(.system(size: 30))
                     }
                     .actionSheet(isPresented: $isPickerPresented) {
@@ -81,12 +105,17 @@ struct ContentView: View {
                     }
                     NavigationLink(destination: DoYourThingSettingView(viewModel: viewModel)) {
                         Image(systemName: "gear.circle.fill")
-                            .foregroundColor(.gray)
+                            .foregroundColor(viewModel.themeIconColor)
                             .font(.system(size: 30))
                     }
                 }
             )
-        }.preferredColorScheme(.light)
+            .onAppear {
+                viewModel.fetchDYT()
+            }
+        }
+        .preferredColorScheme(viewModel.theme == "Light" ? .light : .dark)
+    
     }
     
     func deleteItems(at offsets: IndexSet) {
@@ -159,9 +188,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-
-#Preview {
-    ContentView()
-}
-

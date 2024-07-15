@@ -58,6 +58,9 @@ struct DoYourThingDetailView: View {
             }
         }
         .navigationBarTitle("Aufgabendetails", displayMode: .inline)
+        .onAppear {
+            viewModel.fetchDYT()
+        }
     }
     
     private var dateFormatter: DateFormatter {
@@ -72,9 +75,3 @@ struct DoYourThingDetailView: View {
         return formatter
     }
 }
-
-
-
-//#Preview {
-//    DoYourThingDetailView()
-//}

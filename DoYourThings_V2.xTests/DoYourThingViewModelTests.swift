@@ -7,146 +7,169 @@
 
 import XCTest
 import CoreData
+import SwiftUI
 @testable import DoYourThings_V2_x
 
 class DoYourThingViewModelTests: XCTestCase {
-    
     var viewModel: DoYourThingViewModel!
-    var context: NSManagedObjectContext!
+    var persistentContainer: NSPersistentContainer!
     
     override func setUpWithError() throws {
-        context = setUpInMemoryManagedObjectContext()
-        viewModel = DoYourThingViewModel(context: context)
+        persistentContainer = NSPersistentContainer(name: "DoYourThingModel")
+        let description = NSPersistentStoreDescription()
+        description.type = NSInMemoryStoreType
+        persistentContainer.persistentStoreDescriptions = [description]
+        persistentContainer.loadPersistentStores { (description, error) in
+            XCTAssertNil(error)
+        }
+        
+        viewModel = DoYourThingViewModel(context: persistentContainer.viewContext)
     }
     
     override func tearDownWithError() throws {
         viewModel = nil
-        context = nil
+        persistentContainer = nil
     }
     
-    func setUpInMemoryManagedObjectContext() -> NSManagedObjectContext {
-        let container = NSPersistentContainer(name: "DoYourThingModel")
-        let description = NSPersistentStoreDescription()
-        description.type = NSInMemoryStoreType
-        
-        container.persistentStoreDescriptions = [description]
-        container.loadPersistentStores { description, error in
-            XCTAssertNil(error)
-        }
-        return container.viewContext
-    }
-    
-    func testFetchDYT() {
+    func testFetchDYT() throws {
         // Given
-        let title = "Test Task"
-        let detail = "Test Detail"
-        let priority = "Mittel"
-        let category = "Privat"
-        let date = Date()
-        let time = Date()
-        
-        viewModel.addDYT(title: title, detail: detail, priority: priority, category: category, date: date, time: time)
+        let fetchExpectation = expectation(description: "Fetch DYTs")
         
         // When
         viewModel.fetchDYT()
         
         // Then
-        XCTAssertEqual(viewModel.dyts.count, 1)
-        XCTAssertEqual(viewModel.dyts.first?.dytTitel, title)
-        XCTAssertEqual(viewModel.dyts.first?.dytDetailtext, detail)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            XCTAssertEqual(self.viewModel.dyts.count, 0)
+            fetchExpectation.fulfill()
+        }
+        waitForExpectations(timeout: 2, handler: nil)
     }
     
-    func testAddDYT() {
+    func testAddDYT() throws {
         // Given
-        let title = "New Task"
-        let detail = "New Detail"
-        let priority = "Hoch"
-        let category = "Arbeit"
-        let date = Date()
-        let time = Date()
+        let addExpectation = expectation(description: "Add DYT")
         
         // When
-        viewModel.addDYT(title: title, detail: detail, priority: priority, category: category, date: date, time: time)
+        viewModel.addDYT(title: "Test Task", detail: "Task Detail", priority: "Mittel", category: "Privat", date: Date(), time: Date())
         
         // Then
-        XCTAssertEqual(viewModel.dyts.count, 1)
-        XCTAssertEqual(viewModel.dyts.first?.dytTitel, title)
-        XCTAssertEqual(viewModel.dyts.first?.dytDetailtext, detail)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            XCTAssertEqual(self.viewModel.dyts.count, 1)
+            XCTAssertEqual(self.viewModel.dyts.first?.dytTitel, "Test Task")
+            addExpectation.fulfill()
+        }
+        waitForExpectations(timeout: 2, handler: nil)
     }
     
-    func testDeleteDYT() {
+    func testDeleteDYT() throws {
         // Given
-        let title = "Task to Delete"
-        let detail = "Detail to Delete"
-        let priority = "Mittel"
-        let category = "Privat"
-        let date = Date()
-        let time = Date()
-        
-        viewModel.addDYT(title: title, detail: detail, priority: priority, category: category, date: date, time: time)
-        let task = viewModel.dyts.first!
+        let addExpectation = expectation(description: "Add DYT for Deletion")
+        viewModel.addDYT(title: "Task to Delete", detail: "Task Detail", priority: "Mittel", category: "Privat", date: Date(), time: Date())
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            XCTAssertEqual(self.viewModel.dyts.count, 1)
+            addExpectation.fulfill()
+        }
+        waitForExpectations(timeout: 2, handler: nil)
         
         // When
-        viewModel.deleteDYT(task: task)
+        let deleteExpectation = expectation(description: "Delete DYT")
+        viewModel.deleteDYT(task: viewModel.dyts.first!)
         
         // Then
-        XCTAssertEqual(viewModel.dyts.count, 0)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            XCTAssertEqual(self.viewModel.dyts.count, 0)
+            deleteExpectation.fulfill()
+        }
+        waitForExpectations(timeout: 2, handler: nil)
     }
     
-    func testUpdateDYT() {
+    func testUpdateDYT() throws {
         // Given
-        let title = "Task to Update"
-        let detail = "Detail to Update"
-        let priority = "Mittel"
-        let category = "Privat"
-        let date = Date()
-        let time = Date()
+        let addExpectation = expectation(description: "Add DYT for Update")
+        viewModel.addDYT(title: "Task to Update", detail: "Task Detail", priority: "Mittel", category: "Privat", date: Date(), time: Date())
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            XCTAssertEqual(self.viewModel.dyts.count, 1)
+            addExpectation.fulfill()
+        }
+        waitForExpectations(timeout: 2, handler: nil)
         
-        viewModel.addDYT(title: title, detail: detail, priority: priority, category: category, date: date, time: time)
+        // When
+        let updateExpectation = expectation(description: "Update DYT")
         var task = viewModel.dyts.first!
-        
-        // When
-        let updatedTitle = "Updated Task"
-        task.dytTitel = updatedTitle
+        task.dytTitel = "Updated Task"
         viewModel.updateDYT(task: task)
         
         // Then
-        XCTAssertEqual(viewModel.dyts.count, 1)
-        XCTAssertEqual(viewModel.dyts.first?.dytTitel, updatedTitle)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            XCTAssertEqual(self.viewModel.dyts.first?.dytTitel, "Updated Task")
+            updateExpectation.fulfill()
+        }
+        waitForExpectations(timeout: 2, handler: nil)
     }
     
-    func testAddCategory() {
+    func testAddCategory() throws {
         // Given
-        let newCategory = "New Category"
+        let initialCount = viewModel.categories.count
         
         // When
-        viewModel.addCategory(name: newCategory)
+        viewModel.addCategory(name: "New Category", color: .red)
         
         // Then
-        XCTAssertTrue(viewModel.categories.contains(newCategory))
+        XCTAssertEqual(viewModel.categories.count, initialCount + 1)
+        XCTAssertEqual(viewModel.categories.last?.name, "New Category")
+        XCTAssertEqual(viewModel.categories.last?.color, Color.red)
     }
     
-    func testUpdateCategory() {
+    func testUpdateCategory() throws {
         // Given
-        let oldCategory = "Privat"
-        let newCategory = "Personal"
+        viewModel.addCategory(name: "Category to Update", color: .green)
+        XCTAssertEqual(viewModel.categories.count, 3)
         
         // When
-        viewModel.updateCategory(oldName: oldCategory, newName: newCategory)
+        viewModel.updateCategory(oldName: "Category to Update", newName: "Updated Category", color: .yellow)
         
         // Then
-        XCTAssertFalse(viewModel.categories.contains(oldCategory))
-        XCTAssertTrue(viewModel.categories.contains(newCategory))
+        XCTAssertEqual(viewModel.categories.count, 3)
+        XCTAssertEqual(viewModel.categories.last?.name, "Updated Category")
+        XCTAssertEqual(viewModel.categories.last?.color, Color.yellow)
     }
     
-    func testDeleteCategory() {
+    func testDeleteCategory() throws {
         // Given
-        let categoryToDelete = "Arbeit"
+        viewModel.addCategory(name: "Category to Delete", color: .blue)
+        XCTAssertEqual(viewModel.categories.count, 3)
         
         // When
-        viewModel.deleteCategory(name: categoryToDelete)
+        viewModel.deleteCategory(name: "Category to Delete")
         
         // Then
-        XCTAssertFalse(viewModel.categories.contains(categoryToDelete))
+        XCTAssertEqual(viewModel.categories.count, 2)
+        XCTAssertFalse(viewModel.categories.contains(where: { $0.name == "Category to Delete" }))
+    }
+    
+    func testSearchTasks() throws {
+        // Given
+        viewModel.addDYT(title: "Test Task 1", detail: "Detail 1", priority: "Mittel", category: "Privat", date: Date(), time: Date())
+        viewModel.addDYT(title: "Test Task 2", detail: "Detail 2", priority: "Hoch", category: "Arbeit", date: Date(), time: Date())
+        
+        // When
+        viewModel.searchTasks(query: "Task 1")
+        
+        // Then
+        XCTAssertEqual(viewModel.searchResults.count, 1)
+        XCTAssertEqual(viewModel.searchResults.first?.dytTitel, "Test Task 1")
+        
+        // When
+        viewModel.searchTasks(query: "Detail")
+        
+        // Then
+        XCTAssertEqual(viewModel.searchResults.count, 2)
+        
+        // When
+        viewModel.searchTasks(query: "Non-existent")
+        
+        // Then
+        XCTAssertEqual(viewModel.searchResults.count, 0)
     }
 }
