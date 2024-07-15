@@ -37,18 +37,18 @@ Zeigen Sie die Details jeder Aufgabe in einer separaten Ansicht an, um sicherzus
 
 ## Verwendung
 
-1. **Aufgaben hinzufügen**: Tippen Sie auf das Plus-Symbol (`note.text.badge.plus`) in der Navigationsleiste, um eine neue Aufgabe hinzuzufügen.
+1. **Aufgaben hinzufügen**: Tippen Sie auf das Plus-Symbol in der Navigationsleiste, um eine neue Aufgabe hinzuzufügen.
 2. **Aufgaben bearbeiten**: Tippen Sie auf eine Aufgabe in der Liste, um ihre Details anzuzeigen und zu bearbeiten.
-3. **Kategorien verwalten**: Gehen Sie zu den Einstellungen (`gear.circle.fill`) und wählen Sie "Kategorien verwalten", um Kategorien hinzuzufügen oder zu bearbeiten.
+3. **Kategorien verwalten**: Gehen Sie zu den Einstellungen und wählen Sie "Kategorien verwalten", um Kategorien hinzuzufügen oder zu bearbeiten.
 4. **Prioritäten festlegen**: Verwenden Sie die farbkodierten Symbole, um Aufgaben nach Priorität zu sortieren und anzuzeigen.
 5. **Themen anpassen**: Wechseln Sie zwischen Light- und Dark-Mode im Einstellungsmenü.
-6. **Aufgaben suchen**: Tippen Sie auf das Lupensymbol (`magnifyingglass`), um nach bestimmten Aufgaben zu suchen.
+6. **Aufgaben suchen**: Tippen Sie auf das Lupensymbol, um nach bestimmten Aufgaben zu suchen.
 
 ## Entwickler
 
-- **RGMCode**
-- ** https://rgmcode.onrender.com **
-- ** https://github.com/RGMCode **
+- RGMCode
+- https://rgmcode.onrender.com
+- https://github.com/RGMCode
 
 
 ## Technologien
