@@ -1,4 +1,4 @@
-#  DoYourThings_V2.
+#  DoYourThings_V2
 
 **DoYourThings** ist eine vielseitige und benutzerfreundliche Aufgabenverwaltungs-App, die entwickelt wurde, um Ihnen zu helfen, Ihre täglichen Aufgaben effizient zu organisieren, zu priorisieren und den Überblick zu behalten. Mit einer intuitiven Benutzeroberfläche und leistungsstarken Funktionen bietet DoYourThings alles, was Sie benötigen, um Ihre Produktivität zu steigern und Ihre Aufgaben mühelos zu verwalten.
 
