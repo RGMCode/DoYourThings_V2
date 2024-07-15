@@ -1,4 +1,4 @@
-#  DoYourThings_V2
+#  <img src="https://github.com/RGMCode/DoYourThings_V1/assets/90555783/27cb2bf9-a485-4563-979d-fbd030b11f32" style="width:75px;"/> DoYourThings_V2 by RGMCode 
 
 **DoYourThings** ist eine vielseitige und benutzerfreundliche Aufgabenverwaltungs-App, die entwickelt wurde, um Ihnen zu helfen, Ihre täglichen Aufgaben effizient zu organisieren, zu priorisieren und den Überblick zu behalten. Mit einer intuitiven Benutzeroberfläche und leistungsstarken Funktionen bietet DoYourThings alles, was Sie benötigen, um Ihre Produktivität zu steigern und Ihre Aufgaben mühelos zu verwalten.
 
