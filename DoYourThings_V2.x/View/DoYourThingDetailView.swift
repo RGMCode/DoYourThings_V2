@@ -57,7 +57,6 @@ struct DoYourThingDetailView: View {
                 DoYourThingEditView(viewModel: viewModel, task: dyt)
             }
         }
-        .navigationBarTitle("Aufgabendetails", displayMode: .inline)
         .onAppear {
             viewModel.fetchDYT()
         }

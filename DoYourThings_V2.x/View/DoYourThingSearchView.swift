@@ -28,7 +28,7 @@ struct DoYourThingSearchView: View {
                 }) {
                     HStack {
                         Image(systemName: "circle.hexagongrid.circle")
-                            .foregroundColor(priorityColor(priority: task.dytPriority))
+                            .foregroundColor(viewModel.priorityColor(priority: task.dytPriority))
                             .font(.system(size: 25))
                         Text(task.dytTitel)
                         Spacer()
@@ -42,26 +42,10 @@ struct DoYourThingSearchView: View {
                     }
             }
         }
-        .navigationBarTitle("Aufgaben durchsuchen")
         .onAppear {
             viewModel.searchTasks(query: searchText)
         }
     }
 
-    func priorityColor(priority: String) -> Color {
-        switch priority {
-        case "Sehr Hoch":
-            return .red
-        case "Hoch":
-            return .orange
-        case "Mittel":
-            return .yellow
-        case "Niedrig":
-            return .green
-        case "Sehr Niedrig":
-            return .blue
-        default:
-            return .gray
-        }
-    }
+
 }

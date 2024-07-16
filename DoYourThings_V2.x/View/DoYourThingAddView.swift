@@ -59,12 +59,11 @@ struct DoYourThingAddView: View {
                         HStack {
                                 Spacer()
                                 Text("Aufgabe hinzufügen")
-                                Spacer()
+                            Spacer()
                             }
                     }
                 }
             }
-            .navigationBarTitle("Neue Aufgabe")
             .navigationBarItems(trailing: Button("Abbrechen") {
                 presentationMode.wrappedValue.dismiss()
             })

@@ -90,7 +90,6 @@ struct DoYourThingEditView: View {
                 }
                 .padding()
             }
-            .navigationBarTitle("Aufgabe bearbeiten")
             .navigationBarItems(trailing: Button("Abbrechen") {
                 print("Abbrechen Button gedrückt")
                 presentationMode.wrappedValue.dismiss()

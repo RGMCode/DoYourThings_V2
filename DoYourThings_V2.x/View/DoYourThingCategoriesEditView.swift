@@ -9,48 +9,61 @@ import SwiftUI
 
 struct DoYourThingCategoriesEditView: View {
     @ObservedObject var viewModel: DoYourThingViewModel
-    @Environment(\.presentationMode) var presentationMode
     @State private var category: Category
-    @State private var newName: String
-    @State private var newColor: Color
+    @Environment(\.presentationMode) private var presentationMode
+    @State private var isShowingDeleteAlert = false
 
     init(viewModel: DoYourThingViewModel, category: Category) {
         self.viewModel = viewModel
-        _category = State(initialValue: category)
-        _newName = State(initialValue: category.name)
-        _newColor = State(initialValue: category.color)
+        self._category = State(initialValue: category)
     }
 
     var body: some View {
-        VStack {
-            TextField("Kategorie Name", text: $newName)
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(8)
-                .padding()
-
-            ColorPicker("Kategorie Farbe", selection: $newColor)
-                .padding()
-
-            Button(action: {
-                viewModel.updateCategory(oldName: category.name, newName: newName, color: newColor)
-                presentationMode.wrappedValue.dismiss()
-            }) {
-                Text("Änderungen speichern")
-                    .font(.title2)
+        NavigationView {
+            Form {
+                Section(header: Text("Kategorie bearbeiten")) {
+                    TextField("Name", text: $category.name)
+                    ColorPicker("Farbe", selection: $category.color)
+                }
+                Section {
+                    Button(action: {
+                        viewModel.updateCategory(oldName: category.name, newName: category.name, color: category.color)
+                        presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Text("Speichern")
+                    }
                     .padding()
                     .background(Color.blue)
                     .foregroundColor(.white)
                     .cornerRadius(8)
+                    
+                    Button(action: {
+                        isShowingDeleteAlert = true
+                    }) {
+                        Text("Löschen")
+                            .foregroundColor(.red)
+                    }
+                    .padding()
+                    .background(Color.red.opacity(0.1))
+                    .cornerRadius(8)
+                }
             }
-            .padding()
-            
-            Spacer()
+            .alert(isPresented: $isShowingDeleteAlert) {
+                Alert(
+                    title: Text("Kategorie löschen"),
+                    message: Text("Sind Sie sicher, dass Sie die Kategorie „\(category.name)“ löschen möchten?"),
+                    primaryButton: .destructive(Text("Löschen")) {
+                        viewModel.deleteCategory(name: category.name)
+                        presentationMode.wrappedValue.dismiss()
+                    },
+                    secondaryButton: .cancel()
+                )
+            }
         }
-        .padding()
-        .navigationBarTitle("Kategorie bearbeiten", displayMode: .inline)
     }
 }
+
+
 
 
 #Preview {

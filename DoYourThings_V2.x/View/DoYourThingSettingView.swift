@@ -19,7 +19,6 @@ struct DoYourThingSettingView: View {
                 Text("Theme auswählen")
             }
         }
-        .navigationBarTitle("Einstellungen", displayMode: .inline)
     }
 }
 

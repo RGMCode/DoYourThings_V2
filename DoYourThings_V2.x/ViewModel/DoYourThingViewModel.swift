@@ -17,8 +17,8 @@ class DoYourThingViewModel: ObservableObject {
         Category(name: "Privat", color: .blue),
         Category(name: "Arbeit", color: .green)
     ]
-    @Published var theme: String = "Light" // Default theme
-    @Published var themeIconColor: Color = .teal // Default theme color
+    @Published var theme: String = "Light"
+    @Published var themeIconColor: Color = .blue
     
     private var context: NSManagedObjectContext
     
@@ -26,10 +26,6 @@ class DoYourThingViewModel: ObservableObject {
         self.context = context
         fetchDYT()
     }
-    
-    func updateTheme(to theme: String) {
-            self.theme = theme
-        }
     
     func fetchDYT() {
         let request: NSFetchRequest<DYT_DB> = DYT_DB.fetchRequest()
@@ -116,7 +112,6 @@ class DoYourThingViewModel: ObservableObject {
     func addCategory(name: String, color: Color) {
         if !categories.contains(where: { $0.name == name }) {
             categories.append(Category(name: name, color: color))
-            print("Kategorie hinzugefügt: \(name)")
         }
     }
     
@@ -165,6 +160,65 @@ class DoYourThingViewModel: ObservableObject {
             searchResults = dyts
         } else {
             searchResults = dyts.filter { $0.dytTitel.localizedCaseInsensitiveContains(query) || $0.dytDetailtext.localizedCaseInsensitiveContains(query) }
+        }
+    }
+
+    func filteredTasks(for category: String, filter: String) -> [DoYourThing] {
+        var tasks = dyts.filter { $0.dytCategory == category }
+        switch filter {
+        case "Datum und Priorität":
+            tasks.sort {
+                if $0.dytDate != $1.dytDate {
+                    return $0.dytDate > $1.dytDate
+                } else {
+                    return priorityRank($0.dytPriority) > priorityRank($1.dytPriority)
+                }
+            }
+        case "Priorität und Datum":
+            tasks.sort {
+                if priorityRank($0.dytPriority) != priorityRank($1.dytPriority) {
+                    return priorityRank($0.dytPriority) > priorityRank($1.dytPriority)
+                } else {
+                    return $0.dytDate > $1.dytDate
+                }
+            }
+        default:
+            break
+        }
+        return tasks
+    }
+
+    func priorityRank(_ priority: String) -> Int {
+        switch priority {
+        case "Sehr Hoch":
+            return 5
+        case "Hoch":
+            return 4
+        case "Mittel":
+            return 3
+        case "Niedrig":
+            return 2
+        case "Sehr Niedrig":
+            return 1
+        default:
+            return 0
+        }
+    }
+
+    func priorityColor(priority: String) -> Color {
+        switch priority {
+        case "Sehr Hoch":
+            return .red
+        case "Hoch":
+            return .orange
+        case "Mittel":
+            return .yellow
+        case "Niedrig":
+            return .green
+        case "Sehr Niedrig":
+            return .blue
+        default:
+            return .gray
         }
     }
 }

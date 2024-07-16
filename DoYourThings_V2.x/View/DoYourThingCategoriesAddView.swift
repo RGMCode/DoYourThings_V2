@@ -40,6 +40,5 @@ struct DoYourThingCategoriesAddView: View {
             Spacer()
         }
         .padding()
-        .navigationBarTitle("Neue Kategorie hinzufügen", displayMode: .inline)
     }
 }

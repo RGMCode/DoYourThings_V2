@@ -11,47 +11,68 @@ struct DoYourThingManageCategoriesView: View {
     @ObservedObject var viewModel: DoYourThingViewModel
     @State private var isPresentingAddView = false
     @State private var selectedCategory: Category?
+    @State private var isShowingDeleteAlert = false
+    @State private var categoryToDelete: Category?
 
     var body: some View {
         VStack {
             List {
-                ForEach(viewModel.categories, id: \.self) { category in
-                    Button(action: {
-                        DispatchQueue.main.async {
-                            selectedCategory = category
-                        }
-                    }) {
+                ForEach(viewModel.categories, id: \.id) { category in
+                    NavigationLink(
+                        destination: DoYourThingCategoriesEditView(viewModel: viewModel, category: category)
+                    ) {
                         HStack {
                             Text(category.name)
                             Spacer()
-                            Circle()
-                                .fill(category.color)
-                                .frame(width: 20, height: 20)
+                            Image(systemName: "square.fill")
+                                                    .foregroundColor(category.color)
+                                                    .font(.system(size: 30))
                         }
                     }
                 }
+                .onDelete(perform: handleDelete)
             }
-            .sheet(item: $selectedCategory) { category in
-                DoYourThingCategoriesEditView(viewModel: viewModel, category: category)
-            }
-
             Button(action: {
-                DispatchQueue.main.async {
-                    isPresentingAddView = true
-                }
+                isPresentingAddView = true
             }) {
-                Text("Neue Kategorie hinzufügen")
-                    .font(.title2)
+                Text("Kategorie hinzufügen")
                     .padding()
                     .background(Color.blue)
                     .foregroundColor(.white)
                     .cornerRadius(8)
             }
             .padding()
-            .sheet(isPresented: $isPresentingAddView) {
-                DoYourThingCategoriesAddView(viewModel: viewModel)
+        }
+        .sheet(isPresented: $isPresentingAddView) {
+            DoYourThingCategoriesAddView(viewModel: viewModel)
+        }
+        .alert(isPresented: $isShowingDeleteAlert) {
+            Alert(
+                title: Text("Kategorie löschen"),
+                message: Text("Sind Sie sicher, dass Sie die Kategorie „\(categoryToDelete?.name ?? "")“ löschen möchten?"),
+                primaryButton: .destructive(Text("Löschen")) {
+                    if let category = categoryToDelete {
+                        viewModel.deleteCategory(name: category.name)
+                        categoryToDelete = nil
+                    }
+                    isShowingDeleteAlert = false
+                },
+                secondaryButton: .cancel {
+                    categoryToDelete = nil
+                    isShowingDeleteAlert = false
+                }
+            )
+        }
+    }
+
+    private func handleDelete(at offsets: IndexSet) {
+        if let index = offsets.first {
+            if viewModel.categories.count > 1 {
+                categoryToDelete = viewModel.categories[index]
+                isShowingDeleteAlert = true
+            } else {
+                isShowingDeleteAlert = true
             }
         }
-        .navigationBarTitle("Kategorien verwalten", displayMode: .inline)
     }
 }

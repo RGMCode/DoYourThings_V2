@@ -12,9 +12,9 @@ struct DoYourThingPriorityInformationView: View {
         VStack(alignment: .leading) {
             ForEach(Priority.allCases, id: \.self) { priority in
                 HStack {
-                    Circle()
-                        .fill(priority.color)
-                        .frame(width: 30, height: 30)
+                    Image(systemName: "circle.hexagongrid.circle")
+                                            .foregroundColor(priority.color)
+                                            .frame(width: 30, height: 30)
                     Text(priority.description)
                 }
                 .padding(.vertical, 4)
@@ -22,7 +22,6 @@ struct DoYourThingPriorityInformationView: View {
             Spacer()
         }
         .padding()
-        .navigationBarTitle("Prioritätsinformationen", displayMode: .inline)
     }
 }
 

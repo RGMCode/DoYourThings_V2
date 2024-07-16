@@ -15,6 +15,8 @@ struct ContentView: View {
     @State private var isPickerPresented = false
     @State private var isPresentingSearchView = false
     @State private var isPresentingInfoView = false
+    @State private var isShowingDeleteAlert = false
+    @State private var deleteIndexSet: IndexSet?
 
     var body: some View {
         NavigationView {
@@ -31,18 +33,21 @@ struct ContentView: View {
                 .padding()
 
                 List {
-                    ForEach(filteredTasks()) { dyt in
+                    ForEach(viewModel.filteredTasks(for: selectedCategory, filter: filter)) { dyt in
                         NavigationLink(destination: DoYourThingDetailView(dyt: dyt, viewModel: viewModel)) {
                             HStack {
                                 Image(systemName: "circle.hexagongrid.circle")
-                                    .foregroundColor(priorityColor(priority: dyt.dytPriority))
+                                    .foregroundColor(viewModel.priorityColor(priority: dyt.dytPriority))
                                     .font(.system(size: 25))
                                 Text(dyt.dytTitel)
                                 Spacer()
                             }
                         }
                     }
-                    .onDelete(perform: deleteItems)
+                    .onDelete(perform: { indexSet in
+                        deleteIndexSet = indexSet
+                        isShowingDeleteAlert = true
+                    })
                 }
             }
             .navigationBarItems(
@@ -50,7 +55,7 @@ struct ContentView: View {
                     Button(action: {
                         isPresentingAddView = true
                     }) {
-                        Image(systemName: "note.text.badge.plus")
+                        Image(systemName: "plus.rectangle.on.rectangle")
                             .foregroundColor(viewModel.themeIconColor)
                             .font(.system(size: 30))
                     }
@@ -82,7 +87,7 @@ struct ContentView: View {
                     Button(action: {
                         isPickerPresented = true
                     }) {
-                        Image(systemName: "line.3.horizontal.circle.fill")
+                        Image(systemName: "blinds.horizontal.open")
                             .foregroundColor(viewModel.themeIconColor)
                             .font(.system(size: 30))
                     }
@@ -104,7 +109,7 @@ struct ContentView: View {
                         )
                     }
                     NavigationLink(destination: DoYourThingSettingView(viewModel: viewModel)) {
-                        Image(systemName: "gear.circle.fill")
+                        Image(systemName: "gear")
                             .foregroundColor(viewModel.themeIconColor)
                             .font(.system(size: 30))
                     }
@@ -113,75 +118,22 @@ struct ContentView: View {
             .onAppear {
                 viewModel.fetchDYT()
             }
+            .alert(isPresented: $isShowingDeleteAlert) {
+                Alert(
+                    title: Text("Aufgabe löschen"),
+                    message: Text("Sind Sie sicher, dass Sie diese Aufgabe löschen möchten?"),
+                    primaryButton: .destructive(Text("Löschen")) {
+                        if let indexSet = deleteIndexSet, let index = indexSet.first {
+                            let task = viewModel.filteredTasks(for: selectedCategory, filter: filter)[index]
+                            viewModel.deleteDYT(task: task)
+                            deleteIndexSet = nil
+                        }
+                    },
+                    secondaryButton: .cancel()
+                )
+            }
         }
         .preferredColorScheme(viewModel.theme == "Light" ? .light : .dark)
-    
-    }
-    
-    func deleteItems(at offsets: IndexSet) {
-        for index in offsets {
-            let task = viewModel.dyts[index]
-            viewModel.deleteDYT(task: task)
-        }
-    }
-
-    func filteredTasks() -> [DoYourThing] {
-        var tasks = viewModel.dyts.filter { $0.dytCategory == selectedCategory }
-        switch filter {
-        case "Datum und Priorität":
-            tasks.sort {
-                if $0.dytDate != $1.dytDate {
-                    return $0.dytDate > $1.dytDate
-                } else {
-                    return priorityRank($0.dytPriority) > priorityRank($1.dytPriority)
-                }
-            }
-        case "Priorität und Datum":
-            tasks.sort {
-                if priorityRank($0.dytPriority) != priorityRank($1.dytPriority) {
-                    return priorityRank($0.dytPriority) > priorityRank($1.dytPriority)
-                } else {
-                    return $0.dytDate > $1.dytDate
-                }
-            }
-        default:
-            break
-        }
-        return tasks
-    }
-    
-    func priorityRank(_ priority: String) -> Int {
-        switch priority {
-        case "Sehr Hoch":
-            return 5
-        case "Hoch":
-            return 4
-        case "Mittel":
-            return 3
-        case "Niedrig":
-            return 2
-        case "Sehr Niedrig":
-            return 1
-        default:
-            return 0
-        }
-    }
-    
-    func priorityColor(priority: String) -> Color {
-        switch priority {
-        case "Sehr Hoch":
-            return .red
-        case "Hoch":
-            return .orange
-        case "Mittel":
-            return .yellow
-        case "Niedrig":
-            return .green
-        case "Sehr Niedrig":
-            return .blue
-        default:
-            return .gray
-        }
     }
 }
 
