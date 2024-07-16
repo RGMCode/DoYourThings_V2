@@ -106,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3610F4B42C46F63100DB2F76 /* CustomStyle */ = {
+			isa = PBXGroup;
+			children = (
+				36BBB9592C46B93600391169 /* CustomStyledButton.swift */,
+			);
+			path = CustomStyle;
+			sourceTree = "<group>";
+		};
 		36ABC2652C44805C0084CEF8 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +146,7 @@
 		36BB195F2C42B191006E2C78 /* DoYourThings_V2.x */ = {
 			isa = PBXGroup;
 			children = (
+				3610F4B42C46F63100DB2F76 /* CustomStyle */,
 				36ABC2652C44805C0084CEF8 /* Extension */,
 				36BB19A02C42B5FE006E2C78 /* Controller */,
 				36BB19922C42B224006E2C78 /* DataBase */,
@@ -148,7 +157,6 @@
 				36BB19622C42B191006E2C78 /* ContentView.swift */,
 				36BB19642C42B192006E2C78 /* Assets.xcassets */,
 				36BB19662C42B192006E2C78 /* Preview Content */,
-				36BBB9592C46B93600391169 /* CustomStyledButton.swift */,
 			);
 			path = DoYourThings_V2.x;
 			sourceTree = "<group>";
@@ -554,7 +562,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RGMCode.DoYourThings-V2-x";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -589,7 +597,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RGMCode.DoYourThings-V2-x";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

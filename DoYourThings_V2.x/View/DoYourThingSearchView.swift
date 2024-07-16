@@ -18,7 +18,7 @@ struct DoYourThingSearchView: View {
                 .padding()
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-                .onChange(of: searchText) { newValue in
+                .onChange(of: searchText) { oldValue, newValue in
                     viewModel.searchTasks(query: newValue)
                 }
 
@@ -32,6 +32,13 @@ struct DoYourThingSearchView: View {
                             .font(.system(size: 25))
                         Text(task.dytTitel)
                         Spacer()
+                        VStack {
+                            Text(task.dytDate, formatter: dateFormatter)
+                            Text(task.dytTime, formatter: timeFormatter)
+                        }
+                        Image(systemName: "square.fill")
+                            .foregroundColor(viewModel.getCategoryColor(for: task.dytCategory))
+                            .font(.system(size: 20))
                     }
                 }
             }
@@ -47,5 +54,21 @@ struct DoYourThingSearchView: View {
         }
     }
 
+    private var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        return formatter
+    }
 
+    private var timeFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        return formatter
+    }
 }
+
+
+#Preview {
+    DoYourThingSearchView(viewModel: DoYourThingViewModel(context: PersistenceController.shared.container.viewContext))
+}
+

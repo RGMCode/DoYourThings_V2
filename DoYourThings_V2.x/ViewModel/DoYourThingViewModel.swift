@@ -222,3 +222,9 @@ class DoYourThingViewModel: ObservableObject {
         }
     }
 }
+
+extension DoYourThingViewModel {
+    func getCategoryColor(for categoryName: String) -> Color {
+        return categories.first { $0.name == categoryName }?.color ?? .clear
+    }
+}

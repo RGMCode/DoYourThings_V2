@@ -17,7 +17,7 @@ struct DoYourThingManageCategoriesView: View {
     var body: some View {
         VStack {
             List {
-                ForEach(viewModel.categories, id: \.id) { category in
+                ForEach(viewModel.categories, id: \.self) { category in
                     NavigationLink(
                         destination: DoYourThingCategoriesEditView(viewModel: viewModel, category: category)
                     ) {
@@ -32,8 +32,7 @@ struct DoYourThingManageCategoriesView: View {
                 }
                 .onDelete(perform: handleDelete)
             }
-            
-            CustomStyledButton(title: "Kategorie hinzufügen", backgroundColor: .teal) {
+            CustomStyledButton(title: "Kategorie hinzufügen", backgroundColor: viewModel.themeIconColor) {
                 isPresentingAddView = true
             }
             .padding()
