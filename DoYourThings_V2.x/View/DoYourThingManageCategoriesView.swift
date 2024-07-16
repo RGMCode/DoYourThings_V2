@@ -25,21 +25,16 @@ struct DoYourThingManageCategoriesView: View {
                             Text(category.name)
                             Spacer()
                             Image(systemName: "square.fill")
-                                                    .foregroundColor(category.color)
-                                                    .font(.system(size: 30))
+                                .foregroundColor(category.color)
+                                .font(.system(size: 30))
                         }
                     }
                 }
                 .onDelete(perform: handleDelete)
             }
-            Button(action: {
+            
+            CustomStyledButton(title: "Kategorie hinzufügen", backgroundColor: .teal) {
                 isPresentingAddView = true
-            }) {
-                Text("Kategorie hinzufügen")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
             }
             .padding()
         }

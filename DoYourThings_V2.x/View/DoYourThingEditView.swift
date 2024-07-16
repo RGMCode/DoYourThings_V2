@@ -37,7 +37,7 @@ struct DoYourThingEditView: View {
                             }
                         }
                     }
-                    
+
                     Section(header: Text("Priorität")) {
                         Picker("Priorität", selection: $priority) {
                             Text("Sehr Hoch").tag("Sehr Hoch")
@@ -47,44 +47,29 @@ struct DoYourThingEditView: View {
                             Text("Sehr Niedrig").tag("Sehr Niedrig")
                         }
                     }
-                    
+
                     Section(header: Text("Titel")) {
                         TextField("Titel", text: $title)
                     }
-                    
+
                     Section(header: Text("Detailtext")) {
                         TextEditor(text: $detail)
                             .frame(minHeight: 100, maxHeight: .infinity)
                     }
                 }
-                
+
                 HStack {
                     Spacer()
-                    Button(action: {
+                    CustomStyledButton(title: "Speichern") {
                         print("Speichern Button gedrückt")
                         let updatedTask = DoYourThing(id: task.id, dytTitel: title, dytDetailtext: detail, dytPriority: priority, dytCategory: category.name, dytTime: task.dytTime, dytDate: task.dytDate)
                         viewModel.updateDYT(task: updatedTask)
                         presentationMode.wrappedValue.dismiss()
-                    }) {
-                        Text("Speichern")
-                            .padding()
-                            .background(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.blue, lineWidth: 2)
-                            )
                     }
                     Spacer()
-                    Button(action: {
+                    CustomStyledButton(title: "Löschen", backgroundColor: .red) {
                         print("Löschen Button gedrückt")
                         showingDeleteAlert = true
-                    }) {
-                        Text("Löschen")
-                            .foregroundColor(.red)
-                            .padding()
-                            .background(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.red, lineWidth: 2)
-                            )
                     }
                     Spacer()
                 }
@@ -111,7 +96,7 @@ struct DoYourThingEditView: View {
             }
         }
         .onAppear {
-        
+
         }
         .onDisappear {
             if !showingDeleteAlert {

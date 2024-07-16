@@ -50,18 +50,10 @@ struct DoYourThingAddView: View {
                         .frame(minHeight: 100, maxHeight: .infinity)
                 }
                 
-                Section {
-                    Button(action: {
-                        let currentDate = Date()
-                        viewModel.addDYT(title: title, detail: detail, priority: priority, category: category.name, date: currentDate, time: currentDate)
-                        presentationMode.wrappedValue.dismiss()
-                    }) {
-                        HStack {
-                                Spacer()
-                                Text("Aufgabe hinzufügen")
-                            Spacer()
-                            }
-                    }
+                CustomStyledButton(title: "Aufgabe hinzufügen") {
+                    let currentDate = Date()
+                    viewModel.addDYT(title: title, detail: detail, priority: priority, category: category.name, date: currentDate, time: currentDate)
+                    presentationMode.wrappedValue.dismiss()
                 }
             }
             .navigationBarItems(trailing: Button("Abbrechen") {

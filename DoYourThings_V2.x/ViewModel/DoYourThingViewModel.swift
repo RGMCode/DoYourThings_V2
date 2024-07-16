@@ -14,11 +14,11 @@ class DoYourThingViewModel: ObservableObject {
     @Published var dyts: [DoYourThing] = []
     @Published var searchResults: [DoYourThing] = []
     @Published var categories: [Category] = [
-        Category(name: "Privat", color: .blue),
-        Category(name: "Arbeit", color: .green)
+        Category(name: "Privat", color: .teal),
+        Category(name: "Arbeit", color: .indigo)
     ]
     @Published var theme: String = "Light"
-    @Published var themeIconColor: Color = .blue
+    @Published var themeIconColor: Color = .teal
     
     private var context: NSManagedObjectContext
     

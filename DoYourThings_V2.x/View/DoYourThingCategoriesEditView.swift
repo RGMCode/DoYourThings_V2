@@ -26,26 +26,14 @@ struct DoYourThingCategoriesEditView: View {
                     ColorPicker("Farbe", selection: $category.color)
                 }
                 Section {
-                    Button(action: {
+                    CustomStyledButton(title: "Speichern") {
                         viewModel.updateCategory(oldName: category.name, newName: category.name, color: category.color)
                         presentationMode.wrappedValue.dismiss()
-                    }) {
-                        Text("Speichern")
                     }
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
-                    
-                    Button(action: {
+
+                    CustomStyledButton(title: "Löschen", backgroundColor: .red) {
                         isShowingDeleteAlert = true
-                    }) {
-                        Text("Löschen")
-                            .foregroundColor(.red)
                     }
-                    .padding()
-                    .background(Color.red.opacity(0.1))
-                    .cornerRadius(8)
                 }
             }
             .alert(isPresented: $isShowingDeleteAlert) {
@@ -62,9 +50,6 @@ struct DoYourThingCategoriesEditView: View {
         }
     }
 }
-
-
-
 
 #Preview {
     DoYourThingCategoriesEditView(viewModel: DoYourThingViewModel(context: PersistenceController.shared.container.viewContext), category: Category(name: "Test", color: .blue))

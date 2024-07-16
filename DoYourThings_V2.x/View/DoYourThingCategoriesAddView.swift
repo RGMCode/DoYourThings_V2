@@ -24,21 +24,17 @@ struct DoYourThingCategoriesAddView: View {
             ColorPicker("Kategorie Farbe", selection: $newColor)
                 .padding()
 
-            Button(action: {
+            CustomStyledButton(title: "Kategorie hinzufügen") {
                 viewModel.addCategory(name: newName, color: newColor)
                 presentationMode.wrappedValue.dismiss()
-            }) {
-                Text("Kategorie hinzufügen")
-                    .font(.title2)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
             }
-            .padding()
             
             Spacer()
         }
         .padding()
     }
+}
+
+#Preview {
+    DoYourThingCategoriesAddView(viewModel: DoYourThingViewModel(context: PersistenceController.shared.container.viewContext))
 }

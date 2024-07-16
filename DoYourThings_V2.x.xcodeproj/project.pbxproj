@@ -30,6 +30,7 @@
 		36BB19B12C446E3E006E2C78 /* DoYourThingCategoriesAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19B02C446E3E006E2C78 /* DoYourThingCategoriesAddView.swift */; };
 		36BB19B32C446EA8006E2C78 /* DoYourThingThemeChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19B22C446EA8006E2C78 /* DoYourThingThemeChoiceView.swift */; };
 		36BB19B52C446F2B006E2C78 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19B42C446F2B006E2C78 /* Category.swift */; };
+		36BBB95A2C46B93600391169 /* CustomStyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BBB9592C46B93600391169 /* CustomStyledButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		36BB19B02C446E3E006E2C78 /* DoYourThingCategoriesAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingCategoriesAddView.swift; sourceTree = "<group>"; };
 		36BB19B22C446EA8006E2C78 /* DoYourThingThemeChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingThemeChoiceView.swift; sourceTree = "<group>"; };
 		36BB19B42C446F2B006E2C78 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		36BBB9592C46B93600391169 /* CustomStyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyledButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				36BB19622C42B191006E2C78 /* ContentView.swift */,
 				36BB19642C42B192006E2C78 /* Assets.xcassets */,
 				36BB19662C42B192006E2C78 /* Preview Content */,
+				36BBB9592C46B93600391169 /* CustomStyledButton.swift */,
 			);
 			path = DoYourThings_V2.x;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				36ABC26B2C45B42B0084CEF8 /* DoYourThingPriorityInformationView.swift in Sources */,
 				36BB19AD2C445E0B006E2C78 /* DoYourThingCategoriesEditView.swift in Sources */,
 				36BB199F2C42B3AF006E2C78 /* PersistenceController.swift in Sources */,
+				36BBB95A2C46B93600391169 /* CustomStyledButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
