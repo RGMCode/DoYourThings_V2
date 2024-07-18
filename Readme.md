@@ -33,8 +33,8 @@ Zeigen Sie die Details jeder Aufgabe in einer separaten Ansicht an, um sicherzus
 ## Screenshots
 
 <img src="https://github.com/user-attachments/assets/24ac0ffd-40a5-4df4-8f6a-5d1eccc6a99c" style="width:270px;"/>
-<img src="https://github.com/user-attachments/assets/d71fe858-dfe3-4cbc-902d-0617c142f6e1" style="width:270px;"/>
 <img src="https://github.com/user-attachments/assets/a9c2ff3f-68ba-4cda-97d2-4e42f00fe0c3" style="width:270px;"/>
+<img src="https://github.com/user-attachments/assets/d71fe858-dfe3-4cbc-902d-0617c142f6e1" style="width:270px;"/>
 
 ## Youtube
 
