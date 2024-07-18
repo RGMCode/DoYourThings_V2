@@ -50,8 +50,9 @@ Zeigen Sie die Details jeder Aufgabe in einer separaten Ansicht an, um sicherzus
 ## Entwickler
 
 - RGMCode
-- https://rgmcode.onrender.com
+- https://doyourthings.onrender.com/
 - https://github.com/RGMCode
+- https://rgmcode.onrender.com
 
 
 ## Technologien
