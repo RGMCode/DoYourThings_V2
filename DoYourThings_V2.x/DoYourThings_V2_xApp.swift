@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 @main
-struct DoYourThings_V2_xApp: App {
+struct DoYourThingsApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @StateObject private var viewModel = DoYourThingViewModel(context: PersistenceController.shared.container.viewContext)
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel)
         }
     }
 }

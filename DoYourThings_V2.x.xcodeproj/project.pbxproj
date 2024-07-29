@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		369C6FC42C5823E6008243EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369C6FC32C5823E6008243EE /* AppDelegate.swift */; };
+		369C6FC62C582408008243EE /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369C6FC52C582408008243EE /* NotificationManager.swift */; };
 		36ABC2672C4480720084CEF8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ABC2662C4480720084CEF8 /* UIColorExtension.swift */; };
 		36ABC26B2C45B42B0084CEF8 /* DoYourThingPriorityInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ABC26A2C45B42B0084CEF8 /* DoYourThingPriorityInformationView.swift */; };
 		36BB19612C42B191006E2C78 /* DoYourThings_V2_xApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19602C42B191006E2C78 /* DoYourThings_V2_xApp.swift */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		369C6FC32C5823E6008243EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		369C6FC52C582408008243EE /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		36ABC2662C4480720084CEF8 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		36ABC26A2C45B42B0084CEF8 /* DoYourThingPriorityInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingPriorityInformationView.swift; sourceTree = "<group>"; };
 		36BB195D2C42B191006E2C78 /* DoYourThings_V2.x.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoYourThings_V2.x.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +118,16 @@
 			path = CustomStyle;
 			sourceTree = "<group>";
 		};
+		369C6FC22C5823CB008243EE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				36BB199E2C42B3AF006E2C78 /* PersistenceController.swift */,
+				369C6FC32C5823E6008243EE /* AppDelegate.swift */,
+				369C6FC52C582408008243EE /* NotificationManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		36ABC2652C44805C0084CEF8 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,9 +160,9 @@
 		36BB195F2C42B191006E2C78 /* DoYourThings_V2.x */ = {
 			isa = PBXGroup;
 			children = (
+				369C6FC22C5823CB008243EE /* Services */,
 				3610F4B42C46F63100DB2F76 /* CustomStyle */,
 				36ABC2652C44805C0084CEF8 /* Extension */,
-				36BB19A02C42B5FE006E2C78 /* Controller */,
 				36BB19922C42B224006E2C78 /* DataBase */,
 				36BB198D2C42B1CD006E2C78 /* View */,
 				36BB198C2C42B1C3006E2C78 /* ViewModel */,
@@ -226,14 +240,6 @@
 				36BB19A12C42BC0F006E2C78 /* DoYourThingModel.xcdatamodeld */,
 			);
 			path = DataBase;
-			sourceTree = "<group>";
-		};
-		36BB19A02C42B5FE006E2C78 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				36BB199E2C42B3AF006E2C78 /* PersistenceController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +380,7 @@
 				36BB198F2C42B1E5006E2C78 /* DoYourThing.swift in Sources */,
 				36BB199D2C42B349006E2C78 /* DoYourThingManageCategoriesView.swift in Sources */,
 				36BB19A72C42C0D4006E2C78 /* DoYourThingEditView.swift in Sources */,
+				369C6FC42C5823E6008243EE /* AppDelegate.swift in Sources */,
 				36BB19972C42B2E5006E2C78 /* DoYourThingDetailView.swift in Sources */,
 				36BB199B2C42B336006E2C78 /* DoYourThingSettingView.swift in Sources */,
 				36BB19912C42B1FF006E2C78 /* DoYourThingViewModel.swift in Sources */,
@@ -383,6 +390,7 @@
 				36BB19612C42B191006E2C78 /* DoYourThings_V2_xApp.swift in Sources */,
 				36ABC26B2C45B42B0084CEF8 /* DoYourThingPriorityInformationView.swift in Sources */,
 				36BB19AD2C445E0B006E2C78 /* DoYourThingCategoriesEditView.swift in Sources */,
+				369C6FC62C582408008243EE /* NotificationManager.swift in Sources */,
 				36BB199F2C42B3AF006E2C78 /* PersistenceController.swift in Sources */,
 				36BBB95A2C46B93600391169 /* CustomStyledButton.swift in Sources */,
 			);
@@ -559,7 +567,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -574,7 +582,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -596,7 +604,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -610,7 +618,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

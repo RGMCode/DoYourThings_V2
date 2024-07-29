@@ -51,7 +51,7 @@ class DoYourThingViewModelTests: XCTestCase {
         let addExpectation = expectation(description: "Add DYT")
         
         // When
-        viewModel.addDYT(title: "Test Task", detail: "Task Detail", priority: "Mittel", category: "Privat", date: Date(), time: Date())
+        viewModel.addDYT(title: "Test Task", detail: "Task Detail", priority: "Mittel", category: "Privat", date: Date(), time: Date(), alarmReminderDate: Date(), alarmReminderTime: Date(), alarmDeadlineDate: Date(), alarmDeadlineTime: Date())
         
         // Then
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
@@ -65,7 +65,7 @@ class DoYourThingViewModelTests: XCTestCase {
     func testDeleteDYT() throws {
         // Given
         let addExpectation = expectation(description: "Add DYT for Deletion")
-        viewModel.addDYT(title: "Task to Delete", detail: "Task Detail", priority: "Mittel", category: "Privat", date: Date(), time: Date())
+        viewModel.addDYT(title: "Task to Delete", detail: "Task Detail", priority: "Mittel", category: "Privat", date: Date(), time: Date(), alarmReminderDate: Date(), alarmReminderTime: Date(), alarmDeadlineDate: Date(), alarmDeadlineTime: Date())
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             XCTAssertEqual(self.viewModel.dyts.count, 1)
             addExpectation.fulfill()
@@ -87,7 +87,7 @@ class DoYourThingViewModelTests: XCTestCase {
     func testUpdateDYT() throws {
         // Given
         let addExpectation = expectation(description: "Add DYT for Update")
-        viewModel.addDYT(title: "Task to Update", detail: "Task Detail", priority: "Mittel", category: "Privat", date: Date(), time: Date())
+        viewModel.addDYT(title: "Task to Update", detail: "Task Detail", priority: "Mittel", category: "Privat", date: Date(), time: Date(), alarmReminderDate: Date(), alarmReminderTime: Date(), alarmDeadlineDate: Date(), alarmDeadlineTime: Date())
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             XCTAssertEqual(self.viewModel.dyts.count, 1)
             addExpectation.fulfill()
@@ -150,8 +150,8 @@ class DoYourThingViewModelTests: XCTestCase {
     
     func testSearchTasks() throws {
         // Given
-        viewModel.addDYT(title: "Test Task 1", detail: "Detail 1", priority: "Mittel", category: "Privat", date: Date(), time: Date())
-        viewModel.addDYT(title: "Test Task 2", detail: "Detail 2", priority: "Hoch", category: "Arbeit", date: Date(), time: Date())
+        viewModel.addDYT(title: "Test Task 1", detail: "Detail 1", priority: "Mittel", category: "Privat", date: Date(), time: Date(), alarmReminderDate: Date(), alarmReminderTime: Date(), alarmDeadlineDate: Date(), alarmDeadlineTime: Date())
+        viewModel.addDYT(title: "Test Task 2", detail: "Detail 2", priority: "Hoch", category: "Arbeit", date: Date(), time: Date(), alarmReminderDate: Date(), alarmReminderTime: Date(), alarmDeadlineDate: Date(), alarmDeadlineTime: Date())
         
         // When
         viewModel.searchTasks(query: "Task 1")

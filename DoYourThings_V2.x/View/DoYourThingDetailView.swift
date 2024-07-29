@@ -20,22 +20,34 @@ struct DoYourThingDetailView: View {
                 Text("Uhrzeit: \(dyt.dytTime, formatter: timeFormatter)")
             }
             .padding()
-
+            
             Text("Kategorie: \(dyt.dytCategory)")
                 .padding()
-
+            
             Text("Priorität: \(dyt.dytPriority)")
                 .padding()
-
+            
+            HStack {
+                Text("Erinnerung:")
+                Text("Datum: \(dyt.dytAlarmReminderDate, formatter: dateFormatter)")
+                Text("Uhrzeit: \(dyt.dytAlarmReminderTime, formatter: timeFormatter)")
+            }.padding()
+            
+            HStack {
+                Text("Deadline:")
+                Text("Datum: \(dyt.dytAlarmDeadlineDate, formatter: dateFormatter)")
+                Text("Uhrzeit: \(dyt.dytAlarmDeadlineTime, formatter: timeFormatter)")
+            }.padding()
+            
             Text("Titel: \(dyt.dytTitel)")
                 .font(.largeTitle)
                 .padding()
-
+            
             Text(dyt.dytDetailtext)
                 .padding()
-
+            
             Spacer()
-
+            
             HStack {
                 Spacer()
                 CustomStyledButton(title: "Bearbeiten", backgroundColor: .teal) {
@@ -48,11 +60,10 @@ struct DoYourThingDetailView: View {
                 DoYourThingEditView(viewModel: viewModel, task: dyt)
             }
         }
-        .onAppear {
-            viewModel.fetchDYT()
-        }
+        .navigationTitle(dyt.dytTitel)
+        .navigationBarTitleDisplayMode(.inline)
     }
-
+    
     private var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
@@ -64,4 +75,24 @@ struct DoYourThingDetailView: View {
         formatter.timeStyle = .short
         return formatter
     }
+}
+
+
+#Preview {
+    let context = PersistenceController.shared.container.viewContext
+    let exampleTask = DoYourThing(
+        id: UUID(),
+        dytTitel: "Beispiel Titel",
+        dytDetailtext: "Beispiel Detailtext",
+        dytPriority: "Mittel",
+        dytCategory: "Privat",
+        dytTime: Date(),
+        dytDate: Date(),
+        dytAlarmReminderDate: Date(),
+        dytAlarmReminderTime: Date(),
+        dytAlarmDeadlineDate: Date(),
+        dytAlarmDeadlineTime: Date()
+    )
+    let viewModel = DoYourThingViewModel(context: context)
+    return DoYourThingDetailView(dyt: exampleTask, viewModel: viewModel)
 }

@@ -104,6 +104,18 @@ struct ContentView: View {
                                     filter = "Priorität und Datum"
                                     viewModel.fetchDYT()
                                 },
+                                .default(Text("Nach Erinnerung")) {
+                                    filter = "Nach Erinnerung"
+                                    viewModel.fetchDYT()
+                                },
+                                .default(Text("Nach Enddatum / Deadline")) {
+                                    filter = "Nach Deadline"
+                                    viewModel.fetchDYT()
+                                },
+                                .default(Text("Abgelaufene Aufgaben")) {
+                                    filter = "Abgelaufene Aufgaben"
+                                    viewModel.fetchDYT()
+                                },
                                 .cancel()
                             ]
                         )
@@ -133,6 +145,7 @@ struct ContentView: View {
                 )
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle()) // Ensure proper navigation on iPad
         .preferredColorScheme(viewModel.theme == "Light" ? .light : .dark)
     }
 }

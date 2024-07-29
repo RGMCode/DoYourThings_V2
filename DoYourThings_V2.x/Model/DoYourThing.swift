@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DoYourThing: Identifiable {
+struct DoYourThing: Identifiable, Hashable {
     var id: UUID
     var dytTitel: String
     var dytDetailtext: String
@@ -15,4 +15,9 @@ struct DoYourThing: Identifiable {
     var dytCategory: String
     var dytTime: Date
     var dytDate: Date
+    var dytAlarmReminderDate: Date
+    var dytAlarmReminderTime: Date
+    var dytAlarmDeadlineDate: Date
+    var dytAlarmDeadlineTime: Date
 }
+
