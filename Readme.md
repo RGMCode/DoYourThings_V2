@@ -47,6 +47,7 @@ Behalten Sie den Überblick über Ihre Aufgaben mit leistungsstarken Filteroptio
 <img src="https://github.com/user-attachments/assets/24ac0ffd-40a5-4df4-8f6a-5d1eccc6a99c" style="width:270px;"/>
 <img src="https://github.com/user-attachments/assets/a9c2ff3f-68ba-4cda-97d2-4e42f00fe0c3" style="width:270px;"/>
 <img src="https://github.com/user-attachments/assets/d71fe858-dfe3-4cbc-902d-0617c142f6e1" style="width:270px;"/>
+
 ### iPad
 <img src="https://github.com/user-attachments/assets/4fbcae00-e670-491c-bd07-43a820e10a5a" style="width:270px;"/>
 <img src="https://github.com/user-attachments/assets/5ce591c5-8c30-4fc9-a1d4-c733b3928bb6" style="width:270px;"/>
