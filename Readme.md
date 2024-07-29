@@ -53,8 +53,6 @@ Behalten Sie den Überblick über Ihre Aufgaben mit leistungsstarken Filteroptio
 <img src="https://github.com/user-attachments/assets/5ce591c5-8c30-4fc9-a1d4-c733b3928bb6" style="width:270px;"/>
 <img src="https://github.com/user-attachments/assets/7c0eaf42-e6ad-43f1-9d03-32fd2b3bd3c1" style="width:270px;"/>
 
-## Youtube
-
 ## Verwendung
 
 1. **Aufgaben hinzufügen**: Tippen Sie auf das Plus-Symbol in der Navigationsleiste, um eine neue Aufgabe hinzuzufügen.
