@@ -30,6 +30,18 @@ Finden Sie schnell und einfach jede Aufgabe mit der leistungsstarken Suchfunktio
 ### Detaillierte Ansichten
 Zeigen Sie die Details jeder Aufgabe in einer separaten Ansicht an, um sicherzustellen, dass Sie alle notwendigen Informationen zur Hand haben.
 
+### Benachrichtigungen
+Erhalten Sie rechtzeitige Benachrichtigungen, um keine wichtigen Aufgaben zu verpassen. Sie können Erinnerungen und Deadlines für jede Aufgabe festlegen, sodass Sie immer an anstehende Aufgaben erinnert werden.
+Die Benachrichtigungen sind so konzipiert, dass sie Ihnen helfen, Ihre Aufgaben effizient zu verwalten und sicherzustellen, dass nichts übersehen wird.
+
+### Filteroptionen
+Behalten Sie den Überblick über Ihre Aufgaben mit leistungsstarken Filteroptionen. Sortieren Sie Ihre Aufgaben nach verschiedenen Kriterien, um schnell die relevantesten Aufgaben zu finden:
+- Nach Datum und Priorität: Sortiert die Aufgaben zuerst nach dem Datum und dann nach der Priorität.
+- Nach Priorität und Datum: Sortiert die Aufgaben zuerst nach der Priorität und dann nach dem Datum.
+- Nach Erinnerung: Zeigt Aufgaben basierend auf dem Erinnerungsdatum und der Erinnerungszeit an, sodass die am nächsten anstehenden Erinnerungen zuerst angezeigt werden.
+- Nach Deadline: Sortiert Aufgaben nach dem Enddatum und der Endzeit, um sicherzustellen, dass Sie keine Fristen verpassen.
+- Abgelaufene Aufgaben: Zeigt Aufgaben an, deren Erinnerungen oder Deadlines bereits abgelaufen sind, damit Sie diese schnell überprüfen und bearbeiten können.
+
 ## Screenshots
 
 <img src="https://github.com/user-attachments/assets/24ac0ffd-40a5-4df4-8f6a-5d1eccc6a99c" style="width:270px;"/>
