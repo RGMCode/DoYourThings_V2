@@ -1,0 +1,113 @@
+/* 
+  Localizable.strings
+  DoYourThings_V2.x
+
+  Created by RGMCode on 01.08.24.
+  
+*/
+"chooseTheme" = "Escolher Tema";
+"theme" = "Tema";
+"light" = "Claro";
+"dark" = "Escuro";
+"chooseIconColor" = "Escolher a Cor do Ícone:";
+"themeChoice" = "Escolha do Tema";
+"veryHighDescription" = "Muito Alta = Vermelho \n Tarefas urgentes e críticas que exigem atenção imediata.";
+"highDescription" = "Alta = Laranja \n Tarefas importantes que precisam ser feitas prontamente, mas não tão urgentes quanto 'Muito Alta'.";
+"mediumDescription" = "Média = Amarelo \n Tarefas de importância moderada que devem ser concluídas dentro de um prazo razoável.";
+"lowDescription" = "Baixa = Verde \n Tarefas menos importantes que devem ser feitas quando houver tempo disponível.";
+"veryLowDescription" = "Muito Baixa = Azul \n Tarefas de baixa importância que podem ser feitas a lazer.";
+"categoryName" = "Nome da Categoria";
+"categoryColor" = "Cor da Categoria";
+"addCategory" = "Adicionar Categoria";
+"editCategory" = "Editar Categoria";
+"name" = "Nome";
+"color" = "Cor";
+"save" = "Salvar";
+"delete" = "Excluir";
+"deleteCategory" = "Excluir Categoria";
+"deleteCategoryConfirmation" = "Tem certeza de que deseja excluir a categoria %@?";
+"manageCategories" = "Gerenciar Categorias";
+"searchPlaceholder" = "Pesquisar...";
+"date" = "Data";
+"time" = "Hora";
+"category" = "Categoria";
+"priority" = "Prioridade";
+"reminder" = "Lembrete";
+"deadline" = "Prazo";
+"title" = "Título";
+"edit" = "Editar";
+"exampleTitle" = "Título de Exemplo";
+"exampleDetailText" = "Texto de Detalhe de Exemplo";
+"medium" = "Média";
+"privateCategory" = "Privado";
+"detail" = "Detalhe";
+"addTask" = "Adicionar Tarefa";
+"newTask" = "Nova Tarefa";
+"chooseDate" = "Escolher Data";
+"continue" = "Continuar";
+"done" = "Concluído";
+"cancel" = "Cancelar";
+"settings" = "Configurações";
+"deleteTaskTitle" = "Excluir Tarefa";
+"deleteTaskMessage" = "Tem certeza de que deseja excluir esta tarefa?";
+"deleteButton" = "Excluir";
+"veryHigh" = "Muito Alta";
+"high" = "Alta";
+"low" = "Baixa";
+"veryLow" = "Muito Baixa";
+"workCategory" = "Trabalho";
+"selectedCategoryPrivate" = "Privado";
+"filterByDateAndPriority" = "Por Data e Prioridade";
+"filter" = "Filtrar";
+"choose_filter_option" = "Escolha uma opção de filtro";
+"by_date_and_priority" = "Por Data e Prioridade";
+"by_priority_and_date" = "Por Prioridade e Data";
+"by_reminder" = "Por Lembrete";
+"by_deadline" = "Por Prazo";
+"overdue_tasks" = "Tarefas Atrasadas";
+"task_management" = "Gerenciamento de Tarefas";
+"create_edit_delete_tasks" = "Crie, edite e exclua tarefas com facilidade. Cada tarefa pode ter um título, uma descrição detalhada, um nível de prioridade e uma categoria para garantir que você tenha todas as informações necessárias em um só lugar.";
+"categories" = "Categorias";
+"organize_tasks" = "Organize suas tarefas em categorias personalizadas como 'Privado' e 'Trabalho'. Isso permite que você estruture claramente suas tarefas e acesse rapidamente as mais importantes.";
+"prioritization" = "Priorização";
+"assign_priorities" = "Atribua prioridades às suas tarefas para garantir que você se concentre nas tarefas mais importantes e urgentes. As prioridades codificadas por cores ajudam você a ver a urgência de cada tarefa de relance:";
+"very_high_priority" = "Muito Alta (Vermelho): Tarefas urgentes e críticas que exigem atenção imediata.";
+"high_priority" = "Alta (Laranja): Tarefas importantes que precisam ser concluídas prontamente.";
+"medium_priority" = "Média (Amarelo): Tarefas de importância moderada que devem ser concluídas dentro de um prazo moderado.";
+"low_priority" = "Baixa (Verde): Tarefas menos importantes que devem ser concluídas quando houver tempo disponível.";
+"very_low_priority" = "Muito Baixa (Azul): Tarefas de baixa importância que podem ser concluídas a seu critério.";
+"color_customization" = "Personalização de Cores";
+"personalize_app" = "Personalize o aplicativo ajustando as cores das suas categorias. Isso permite uma experiência de usuário visualmente atraente e individualmente adaptada.";
+"theme_selection" = "Seleção de Tema";
+"toggle_light_dark" = "Alterne entre o modo Claro e Escuro para se adequar às suas preferências e garantir uma experiência de usuário agradável em diferentes condições de iluminação.";
+"search_function" = "Função de Pesquisa";
+"find_tasks" = "Encontre rapidamente qualquer tarefa usando a poderosa função de pesquisa. Basta digitar o título ou parte da descrição para exibir as tarefas desejadas.";
+"detailed_views" = "Vistas Detalhadas";
+"view_task_details" = "Veja os detalhes de cada tarefa em uma visão separada para garantir que você tenha todas as informações necessárias à mão.";
+"notifications" = "Notificações";
+"timely_notifications" = "Receba notificações oportunas para evitar perder tarefas importantes. Você pode definir lembretes e prazos para cada tarefa para garantir que sempre seja lembrado das tarefas futuras. As notificações são projetadas para ajudá-lo a gerenciar suas tarefas de forma eficiente e garantir que nada seja esquecido.";
+"filters" = "Filtros";
+"overview_filters" = "Acompanhe suas tarefas com poderosas opções de filtro. Classifique suas tarefas por diferentes critérios para encontrar rapidamente as mais relevantes:";
+"overdue_tasks" = "Tarefas Atrasadas";
+
+"language" = "Idioma";
+"selectLanguage" = "Selecionar Idioma";
+
+"manageCategories" = "Gerenciar Categorias";
+"chooseTheme" = "Escolher Tema";
+"settings" = "Configurações";
+"language" = "Idioma";
+"chooseLanguage" = "Escolher Idioma";
+
+"errorRequestingAuthorization" = "Erro ao solicitar autorização";
+"notificationAuthorizationGranted" = "Autorização de notificação concedida";
+"notificationAuthorizationDenied" = "Autorização de notificação negada";
+"notificationAuthorizationNotDetermined" = "Autorização de notificação não determinada";
+"notificationAuthorizationProvisional" = "Autorização de notificação provisória";
+"notificationAuthorizationEphemeral" = "Autorização de notificação efêmera";
+"notificationAuthorizationUnknown" = "Status de autorização de notificação desconhecido";
+"reminderTitle" = "Lembrete: %@";
+"deadlineTitle" = "Prazo: %@";
+"notificationBody" = "Prioridade: %@ - Categoria: %@\nDetalhes: %@";
+"errorSchedulingNotification" = "Erro ao agendar notificação";
+"notificationScheduled" = "Notificação agendada para %@ às %@";

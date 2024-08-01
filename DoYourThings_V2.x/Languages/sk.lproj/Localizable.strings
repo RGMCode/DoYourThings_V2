@@ -1,0 +1,113 @@
+/* 
+  Localizable.strings
+  DoYourThings_V2.x
+
+  Created by RGMCode on 01.08.24.
+  
+*/
+"chooseTheme" = "Vyberte Tému";
+"theme" = "Téma";
+"light" = "Svetlá";
+"dark" = "Tmavá";
+"chooseIconColor" = "Vyberte Farbu Ikony:";
+"themeChoice" = "Výber Témy";
+"veryHighDescription" = "Veľmi Vysoká = Červená\nNaliehavé a kritické úlohy, ktoré vyžadujú okamžitú pozornosť.";
+"highDescription" = "Vysoká = Oranžová\nDôležité úlohy, ktoré je potrebné vykonať rýchlo, ale nie sú také naliehavé ako 'Veľmi Vysoká'.";
+"mediumDescription" = "Stredná = Žltá\nÚlohy strednej dôležitosti, ktoré by mali byť dokončené v primeranom časovom rámci.";
+"lowDescription" = "Nízka = Zelená\nMenej dôležité úlohy, ktoré by sa mali vykonať, keď je dostupný čas.";
+"veryLowDescription" = "Veľmi Nízka = Modrá\nÚlohy s nízkou dôležitosťou, ktoré sa môžu vykonať vo voľnom čase.";
+"categoryName" = "Názov Kategórie";
+"categoryColor" = "Farba Kategórie";
+"addCategory" = "Pridať Kategóriu";
+"editCategory" = "Upraviť Kategóriu";
+"name" = "Meno";
+"color" = "Farba";
+"save" = "Uložiť";
+"delete" = "Zmazať";
+"deleteCategory" = "Zmazať Kategóriu";
+"deleteCategoryConfirmation" = "Ste si istí, že chcete zmazať kategóriu %@?";
+"manageCategories" = "Správa Kategórií";
+"searchPlaceholder" = "Hľadať...";
+"date" = "Dátum";
+"time" = "Čas";
+"category" = "Kategória";
+"priority" = "Priorita";
+"reminder" = "Pripomienka";
+"deadline" = "Termín";
+"title" = "Názov";
+"edit" = "Upraviť";
+"exampleTitle" = "Príklad Názvu";
+"exampleDetailText" = "Príklad Detailného Textu";
+"medium" = "Stredná";
+"privateCategory" = "Súkromná";
+"detail" = "Detail";
+"addTask" = "Pridať Úlohu";
+"newTask" = "Nová Úloha";
+"chooseDate" = "Vyberte Dátum";
+"continue" = "Pokračovať";
+"done" = "Hotovo";
+"cancel" = "Zrušiť";
+"settings" = "Nastavenia";
+"deleteTaskTitle" = "Zmazať Úlohu";
+"deleteTaskMessage" = "Ste si istí, že chcete zmazať túto úlohu?";
+"deleteButton" = "Zmazať";
+"veryHigh" = "Veľmi Vysoká";
+"high" = "Vysoká";
+"low" = "Nízka";
+"veryLow" = "Veľmi Nízka";
+"workCategory" = "Práca";
+"selectedCategoryPrivate" = "Súkromná";
+"filterByDateAndPriority" = "Podľa Dátumu a Priority";
+"filter" = "Filter";
+"choose_filter_option" = "Vyberte možnosť filtra";
+"by_date_and_priority" = "Podľa Dátumu a Priority";
+"by_priority_and_date" = "Podľa Priority a Dátumu";
+"by_reminder" = "Podľa Pripomienky";
+"by_deadline" = "Podľa Termínu";
+"overdue_tasks" = "Oneskorené Úlohy";
+"task_management" = "Správa Úloh";
+"create_edit_delete_tasks" = "Jednoducho vytvárajte, upravujte a mazať úlohy. Každá úloha môže mať názov, podrobný popis, úroveň priority a kategóriu, aby ste mali všetky potrebné informácie na jednom mieste.";
+"categories" = "Kategórie";
+"organize_tasks" = "Organizujte si úlohy do vlastných kategórií ako 'Súkromná' a 'Práca'. To vám umožní jasne štruktúrovať úlohy a rýchlo pristupovať k najdôležitejším úlohám.";
+"prioritization" = "Prioritizácia";
+"assign_priorities" = "Priraďujte priority svojim úlohám, aby ste sa sústredili na najdôležitejšie a najnaliehavejšie úlohy. Farebne kódované priority vám pomôžu rýchlo vidieť naliehavosť každej úlohy:";
+"very_high_priority" = "Veľmi Vysoká (Červená): Naliehavé a kritické úlohy, ktoré vyžadujú okamžitú pozornosť.";
+"high_priority" = "Vysoká (Oranžová): Dôležité úlohy, ktoré musia byť dokončené rýchlo.";
+"medium_priority" = "Stredná (Žltá): Úlohy strednej dôležitosti, ktoré by mali byť dokončené v primeranom časovom rámci.";
+"low_priority" = "Nízka (Zelená): Menej dôležité úlohy, ktoré by sa mali vykonať, keď je dostupný čas.";
+"very_low_priority" = "Veľmi Nízka (Modrá): Úlohy s nízkou dôležitosťou, ktoré sa môžu vykonať vo voľnom čase.";
+"color_customization" = "Prispôsobenie Farieb";
+"personalize_app" = "Prispôsobte si aplikáciu nastavením farieb svojich kategórií. To umožňuje vizuálne atraktívne a individuálne prispôsobené používateľské prostredie.";
+"theme_selection" = "Výber Témy";
+"toggle_light_dark" = "Prepnite medzi svetlým a tmavým režimom podľa vašich preferencií a zabezpečte príjemné používateľské prostredie za rôznych svetelných podmienok.";
+"search_function" = "Funkcia Vyhľadávania";
+"find_tasks" = "Rýchlo a jednoducho nájdite akúkoľvek úlohu pomocou silnej funkcie vyhľadávania. Stačí zadať názov alebo časť popisu na zobrazenie požadovaných úloh.";
+"detailed_views" = "Podrobné Pohľady";
+"view_task_details" = "Zobrazte podrobnosti každej úlohy v samostatnom okne, aby ste mali všetky potrebné informácie po ruke.";
+"notifications" = "Upozornenia";
+"timely_notifications" = "Prijímajte včasné upozornenia, aby ste nezmeškali dôležité úlohy. Môžete nastaviť pripomienky a termíny pre každú úlohu, aby ste boli vždy informovaní o nadchádzajúcich úlohách. Upozornenia sú navrhnuté tak, aby vám pomohli efektívne spravovať úlohy a zabezpečili, že nič nebude prehliadnuté.";
+"filters" = "Filtre";
+"overview_filters" = "Majte svoje úlohy pod kontrolou pomocou silných možností filtrovania. Triedte úlohy podľa rôznych kritérií, aby ste rýchlo našli najrelevantnejšie:";
+"overdue_tasks" = "Oneskorené Úlohy";
+
+"language" = "Jazyk";
+"selectLanguage" = "Vybrať jazyk";
+
+"manageCategories" = "Spravovať kategórie";
+"chooseTheme" = "Vybrať tému";
+"settings" = "Nastavenia";
+"language" = "Jazyk";
+"chooseLanguage" = "Vybrať jazyk";
+
+"errorRequestingAuthorization" = "Chyba pri žiadosti o autorizáciu";
+"notificationAuthorizationGranted" = "Povolenie na oznámenie udelené";
+"notificationAuthorizationDenied" = "Povolenie na oznámenie zamietnuté";
+"notificationAuthorizationNotDetermined" = "Povolenie na oznámenie neurčené";
+"notificationAuthorizationProvisional" = "Dočasné povolenie na oznámenie udelené";
+"notificationAuthorizationEphemeral" = "Efemérne povolenie na oznámenie udelené";
+"notificationAuthorizationUnknown" = "Neznámy stav povolenia na oznámenie";
+"reminderTitle" = "Pripomienka: %@";
+"deadlineTitle" = "Termín: %@";
+"notificationBody" = "Priorita: %@ - Kategória: %@\nDetaily: %@";
+"errorSchedulingNotification" = "Chyba pri plánovaní oznámenia";
+"notificationScheduled" = "Oznámenie naplánované na %@ o %@";
