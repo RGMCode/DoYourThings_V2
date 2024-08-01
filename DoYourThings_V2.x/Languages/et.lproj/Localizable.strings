@@ -1,0 +1,113 @@
+/* 
+  Localizable.strings
+  DoYourThings_V2.x
+
+  Created by RGMCode on 01.08.24.
+  
+*/
+"chooseTheme" = "Vali teema";
+"theme" = "Teema";
+"light" = "Hele";
+"dark" = "Tume";
+"chooseIconColor" = "Vali ikooni värv:";
+"themeChoice" = "Teema valik";
+"veryHighDescription" = "Väga kõrge = Punane\nKiireloomulised ja kriitilised ülesanded, mis vajavad viivitamatut tähelepanu.";
+"highDescription" = "Kõrge = Oranž\nTähtsad ülesanded, mis tuleb viivitamata ära teha, kuid mitte nii kiireloomulised kui 'Väga kõrge'.";
+"mediumDescription" = "Keskmine = Kollane\nMõõduka tähtsusega ülesanded, mis tuleks täita mõistliku aja jooksul.";
+"lowDescription" = "Madal = Roheline\nVähem tähtsad ülesanded, mis tuleks teha, kui aega on.";
+"veryLowDescription" = "Väga madal = Sinine\nMadal tähtsusega ülesanded, mida saab teha vabal ajal.";
+"categoryName" = "Kategooria nimi";
+"categoryColor" = "Kategooria värv";
+"addCategory" = "Lisa kategooria";
+"editCategory" = "Muuda kategooriat";
+"name" = "Nimi";
+"color" = "Värv";
+"save" = "Salvesta";
+"delete" = "Kustuta";
+"deleteCategory" = "Kustuta kategooria";
+"deleteCategoryConfirmation" = "Kas olete kindel, et soovite kustutada kategooria %@?";
+"manageCategories" = "Halda kategooriaid";
+"searchPlaceholder" = "Otsi...";
+"date" = "Kuupäev";
+"time" = "Aeg";
+"category" = "Kategooria";
+"priority" = "Prioriteet";
+"reminder" = "Meeldetuletus";
+"deadline" = "Tähtaeg";
+"title" = "Pealkiri";
+"edit" = "Muuda";
+"exampleTitle" = "Näide pealkiri";
+"exampleDetailText" = "Näide detailtekst";
+"medium" = "Keskmine";
+"privateCategory" = "Privaatne";
+"detail" = "Detail";
+"addTask" = "Lisa ülesanne";
+"newTask" = "Uus ülesanne";
+"chooseDate" = "Vali kuupäev";
+"continue" = "Jätka";
+"done" = "Valmis";
+"cancel" = "Tühista";
+"settings" = "Seaded";
+"deleteTaskTitle" = "Kustuta ülesanne";
+"deleteTaskMessage" = "Kas olete kindel, et soovite selle ülesande kustutada?";
+"deleteButton" = "Kustuta";
+"veryHigh" = "Väga kõrge";
+"high" = "Kõrge";
+"low" = "Madal";
+"veryLow" = "Väga madal";
+"workCategory" = "Töö";
+"selectedCategoryPrivate" = "Privaatne";
+"filterByDateAndPriority" = "Kuupäeva ja prioriteedi järgi";
+"filter" = "Filter";
+"choose_filter_option" = "Vali filtri valik";
+"by_date_and_priority" = "Kuupäeva ja prioriteedi järgi";
+"by_priority_and_date" = "Prioriteedi ja kuupäeva järgi";
+"by_reminder" = "Meeldetuletuse järgi";
+"by_deadline" = "Tähtaeg";
+"overdue_tasks" = "Tähtajatud ülesanded";
+"task_management" = "Ülesannete haldamine";
+"create_edit_delete_tasks" = "Loo, muuda ja kustuta ülesandeid hõlpsasti. Igal ülesandel võib olla pealkiri, üksikasjalik kirjeldus, prioriteeditase ja kategooria, et tagada kõik vajalikud andmed ühes kohas.";
+"categories" = "Kategooriad";
+"organize_tasks" = "Korraldage oma ülesanded kohandatud kategooriatesse, näiteks 'Privaatne' ja 'Töö'. See võimaldab teil oma ülesandeid selgelt struktureerida ja kiiresti juurde pääseda kõige olulisematele ülesannetele.";
+"prioritization" = "Prioriteetimine";
+"assign_priorities" = "Määrake oma ülesannetele prioriteedid, et keskenduda kõige olulisematele ja kiireloomulisematele ülesannetele. Värvikoodiga prioriteedid aitavad teil ülesannete kiireloomulisust silmapilkselt näha:";
+"very_high_priority" = "Väga kõrge (Punane): Kiireloomulised ja kriitilised ülesanded, mis vajavad viivitamatut tähelepanu.";
+"high_priority" = "Kõrge (Oranž): Tähtsad ülesanded, mis tuleb viivitamata ära teha.";
+"medium_priority" = "Keskmine (Kollane): Mõõduka tähtsusega ülesanded, mis tuleks täita mõistliku aja jooksul.";
+"low_priority" = "Madal (Roheline): Vähem tähtsad ülesanded, mis tuleks teha, kui aega on.";
+"very_low_priority" = "Väga madal (Sinine): Madal tähtsusega ülesanded, mida saab teha vabal ajal.";
+"color_customization" = "Värvide kohandamine";
+"personalize_app" = "Kohandage rakendust, kohandades oma kategooriate värve. See võimaldab visuaalselt atraktiivset ja individuaalselt kohandatud kasutajakogemust.";
+"theme_selection" = "Teema valik";
+"toggle_light_dark" = "Lülitage heleda ja tumeda režiimi vahel, et kohandada rakendust oma eelistustega ja tagada meeldiv kasutajakogemus erinevates valgustingimustes.";
+"search_function" = "Otsingu funktsioon";
+"find_tasks" = "Leidke mis tahes ülesanne kiiresti ja lihtsalt, kasutades võimsat otsingufunktsiooni. Sisestage lihtsalt pealkiri või osa kirjeldusest, et soovitud ülesanded kuvada.";
+"detailed_views" = "Üksikasjalikud vaated";
+"view_task_details" = "Vaadake iga ülesande üksikasju eraldi vaates, et tagada kõik vajalikud andmed käepärast.";
+"notifications" = "Teavitused";
+"timely_notifications" = "Saage õigeaegseid teavitusi, et mitte unustada olulisi ülesandeid. Saate iga ülesande jaoks määrata meeldetuletused ja tähtajad, et alati meelde tuletada tulevasi ülesandeid. Teavitused on loodud selleks, et aidata teil oma ülesandeid tõhusalt hallata ja tagada, et midagi ei jääks tähelepanuta.";
+"filters" = "Filtrid";
+"overview_filters" = "Hoidke oma ülesannetega kursis võimsate filtri valikutega. Sortige oma ülesandeid erinevate kriteeriumide järgi, et kiiresti leida kõige asjakohasemad ülesanded:";
+"overdue_tasks" = "Tähtajatud ülesanded";
+
+"manageCategories" = "Halda kategooriaid";
+"chooseTheme" = "Vali teema";
+"settings" = "Seaded";
+"language" = "Keel";
+"chooseLanguage" = "Vali keel";
+
+"errorRequestingAuthorization" = "Viga autoriseerimise taotlemisel";
+"notificationAuthorizationGranted" = "Teavituste luba antud";
+"notificationAuthorizationDenied" = "Teavituste luba keelatud";
+"notificationAuthorizationNotDetermined" = "Teavituste luba ei ole määratud";
+"notificationAuthorizationProvisional" = "Ajutine teavituste luba";
+"notificationAuthorizationEphemeral" = "Ajutine teavituste luba";
+"notificationAuthorizationUnknown" = "Teavituste loa määratlematu staatus";
+"reminderTitle" = "Meeldetuletus: %@";
+"deadlineTitle" = "Tähtaeg: %@";
+"notificationBody" = "Prioriteet: %@ - Kategooria: %@\nÜksikasjad: %@";
+"errorSchedulingNotification" = "Viga teavituse plaanimisel";
+"notificationScheduled" = "Teavitus on plaanitud kuupäeval %@ kell %@";
+
+"language" = "Keel";
+"selectLanguage" = "Vali keel";

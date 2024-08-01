@@ -111,3 +111,6 @@
 "notificationBody" = "Prioritet: %@ - Kategorija: %@\nDetalji: %@";
 "errorSchedulingNotification" = "Pogreška pri planiranju obavijesti";
 "notificationScheduled" = "Obavijest zakazana za %@ u %@";
+
+"language" = "Jezik";
+"selectLanguage" = "Odaberite jezik";

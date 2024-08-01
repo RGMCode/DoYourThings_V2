@@ -111,3 +111,6 @@
 "notificationBody" = "עדיפות: %@ - קטגוריה: %@\nפרטים: %@";
 "errorSchedulingNotification" = "שגיאה בתזמון ההתראה";
 "notificationScheduled" = "ההתראה נקבעה ל- %@ ב- %@";
+
+"language" = "שפה";
+"selectLanguage" = "בחר שפה";

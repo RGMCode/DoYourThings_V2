@@ -111,3 +111,6 @@
 "notificationBody" = "Keutamaan: %@ - Kategori: %@\nButiran: %@";
 "errorSchedulingNotification" = "Ralat menjadualkan pemberitahuan";
 "notificationScheduled" = "Pemberitahuan dijadualkan pada %@ pada %@";
+
+"language" = "Bahasa";
+"selectLanguage" = "Pilih Bahasa";

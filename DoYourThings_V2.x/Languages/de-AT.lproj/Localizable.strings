@@ -5,17 +5,17 @@
   Created by RGMCode on 01.08.24.
   
 */
-"chooseTheme" = "Thema wählen";
+"chooseTheme" = "Thema auswählen";
 "theme" = "Thema";
 "light" = "Hell";
 "dark" = "Dunkel";
-"chooseIconColor" = "Wähle eine Icon-Farbe:";
+"chooseIconColor" = "Wählen Sie eine Symbolfarbe:";
 "themeChoice" = "Themenwahl";
-"veryHighDescription" = "Sehr Hoch = Rot\nDringende und kritische Aufgaben, die sofortige Aufmerksamkeit erfordern.";
-"highDescription" = "Hoch = Orange\nWichtige Aufgaben, die prompt erledigt werden müssen, aber nicht so dringend wie 'Sehr Hoch'.";
-"mediumDescription" = "Mittel = Gelb\nAufgaben von mittlerer Wichtigkeit, die innerhalb eines vernünftigen Zeitrahmens erledigt werden sollten.";
+"veryHighDescription" = "Sehr hoch = Rot\nDringende und kritische Aufgaben, die sofortige Aufmerksamkeit erfordern.";
+"highDescription" = "Hoch = Orange\nWichtige Aufgaben, die prompt erledigt werden müssen, aber nicht so dringend wie 'Sehr hoch'.";
+"mediumDescription" = "Mittel = Gelb\nAufgaben von mittlerer Wichtigkeit, die innerhalb eines angemessenen Zeitrahmens erledigt werden sollten.";
 "lowDescription" = "Niedrig = Grün\nWeniger wichtige Aufgaben, die erledigt werden sollten, wenn Zeit verfügbar ist.";
-"veryLowDescription" = "Sehr Niedrig = Blau\nAufgaben von geringer Wichtigkeit, die bei Gelegenheit erledigt werden können.";
+"veryLowDescription" = "Sehr niedrig = Blau\nAufgaben von geringer Wichtigkeit, die in Ruhe erledigt werden können.";
 "categoryName" = "Kategoriename";
 "categoryColor" = "Kategoriefarbe";
 "addCategory" = "Kategorie hinzufügen";
@@ -27,9 +27,9 @@
 "deleteCategory" = "Kategorie löschen";
 "deleteCategoryConfirmation" = "Sind Sie sicher, dass Sie die Kategorie %@ löschen möchten?";
 "manageCategories" = "Kategorien verwalten";
-"searchPlaceholder" = "Suche...";
+"searchPlaceholder" = "Suchen...";
 "date" = "Datum";
-"time" = "Zeit";
+"time" = "Uhrzeit";
 "category" = "Kategorie";
 "priority" = "Priorität";
 "reminder" = "Erinnerung";
@@ -51,10 +51,10 @@
 "deleteTaskTitle" = "Aufgabe löschen";
 "deleteTaskMessage" = "Sind Sie sicher, dass Sie diese Aufgabe löschen möchten?";
 "deleteButton" = "Löschen";
-"veryHigh" = "Sehr Hoch";
+"veryHigh" = "Sehr hoch";
 "high" = "Hoch";
 "low" = "Niedrig";
-"veryLow" = "Sehr Niedrig";
+"veryLow" = "Sehr niedrig";
 "workCategory" = "Arbeit";
 "selectedCategoryPrivate" = "Privat";
 "filterByDateAndPriority" = "Nach Datum und Priorität";
@@ -68,16 +68,16 @@
 "task_management" = "Aufgabenverwaltung";
 "create_edit_delete_tasks" = "Erstellen, bearbeiten und löschen Sie Aufgaben mit Leichtigkeit. Jede Aufgabe kann einen Titel, eine detaillierte Beschreibung, ein Prioritätslevel und eine Kategorie haben, um sicherzustellen, dass Sie alle notwendigen Informationen an einem Ort haben.";
 "categories" = "Kategorien";
-"organize_tasks" = "Organisieren Sie Ihre Aufgaben in benutzerdefinierten Kategorien wie 'Privat' und 'Arbeit'. Dies ermöglicht es Ihnen, Ihre Aufgaben klar zu strukturieren und schnell auf die wichtigsten Aufgaben zuzugreifen.";
+"organize_tasks" = "Organisieren Sie Ihre Aufgaben in benutzerdefinierte Kategorien wie 'Privat' und 'Arbeit'. Dies ermöglicht es Ihnen, Ihre Aufgaben klar zu strukturieren und schnell auf die wichtigsten Aufgaben zuzugreifen.";
 "prioritization" = "Priorisierung";
-"assign_priorities" = "Weisen Sie Ihren Aufgaben Prioritäten zu, um sicherzustellen, dass Sie sich auf die wichtigsten und dringendsten Aufgaben konzentrieren. Die farbcodierten Prioritäten helfen Ihnen dabei, den Dringlichkeitsgrad jeder Aufgabe auf einen Blick zu erkennen:";
-"very_high_priority" = "Sehr Hoch (Rot): Dringende und kritische Aufgaben, die sofortige Aufmerksamkeit erfordern.";
+"assign_priorities" = "Weisen Sie Ihren Aufgaben Prioritäten zu, um sicherzustellen, dass Sie sich auf die wichtigsten und dringendsten Aufgaben konzentrieren. Die farbcodierten Prioritäten helfen Ihnen, den Dringlichkeitsgrad jeder Aufgabe auf einen Blick zu erkennen:";
+"very_high_priority" = "Sehr hoch (Rot): Dringende und kritische Aufgaben, die sofortige Aufmerksamkeit erfordern.";
 "high_priority" = "Hoch (Orange): Wichtige Aufgaben, die prompt erledigt werden müssen.";
-"medium_priority" = "Mittel (Gelb): Aufgaben von mittlerer Wichtigkeit, die innerhalb eines vernünftigen Zeitrahmens erledigt werden sollten.";
+"medium_priority" = "Mittel (Gelb): Aufgaben von mittlerer Wichtigkeit, die innerhalb eines angemessenen Zeitrahmens erledigt werden sollten.";
 "low_priority" = "Niedrig (Grün): Weniger wichtige Aufgaben, die erledigt werden sollten, wenn Zeit verfügbar ist.";
-"very_low_priority" = "Sehr Niedrig (Blau): Aufgaben von geringer Wichtigkeit, die bei Gelegenheit erledigt werden können.";
-"color_customization" = "Farbanpassung";
-"personalize_app" = "Personalisieren Sie die App, indem Sie die Farben Ihrer Kategorien anpassen. Dies ermöglicht eine visuell ansprechende und individuell gestaltete Benutzererfahrung.";
+"very_low_priority" = "Sehr niedrig (Blau): Aufgaben von geringer Wichtigkeit, die in Ruhe erledigt werden können.";
+"color_customization" = "Farbgestaltung";
+"personalize_app" = "Passen Sie die App an, indem Sie die Farben Ihrer Kategorien anpassen. Dies ermöglicht eine visuell ansprechende und individuell gestaltete Benutzererfahrung.";
 "theme_selection" = "Themenauswahl";
 "toggle_light_dark" = "Wechseln Sie zwischen Light- und Dark-Mode, um die App Ihren Vorlieben anzupassen und eine angenehme Nutzungserfahrung bei unterschiedlichen Lichtverhältnissen zu gewährleisten.";
 "search_function" = "Suchfunktion";
@@ -90,27 +90,24 @@
 "overview_filters" = "Behalten Sie den Überblick über Ihre Aufgaben mit leistungsstarken Filteroptionen. Sortieren Sie Ihre Aufgaben nach verschiedenen Kriterien, um schnell die relevantesten Aufgaben zu finden:";
 "overdue_tasks" = "Überfällige Aufgaben";
 
-"language" = "Sprooch";
-"selectLanguage" = "Sprooch ussue";
+"manageCategories" = "Kategorien verwalten";
+"chooseTheme" = "Thema auswählen";
+"settings" = "Einstellungen";
+"language" = "Sprache";
+"chooseLanguage" = "Sprache auswählen";
 
-"manageCategories" = "Kategorien verwalte";
-"chooseTheme" = "Thema ussue";
-"settings" = "Eistellige";
-"language" = "Sprooch";
-"chooseLanguage" = "Sprooch wähle";
-
-"errorRequestingAuthorization" = "Fähler bim Aafrage vo de Bewilligung";
-"notificationAuthorizationGranted" = "Benachrichtigs-Bewilligung erteilt";
-"notificationAuthorizationDenied" = "Benachrichtigs-Bewilligung verweigert";
-"notificationAuthorizationNotDetermined" = "Benachrichtigs-Bewilligung nöd bestimmt";
-"notificationAuthorizationProvisional" = "Vorläufige Benachrichtigs-Bewilligung";
-"notificationAuthorizationEphemeral" = "Episodisch Benachrichtigs-Bewilligung";
-"notificationAuthorizationUnknown" = "Unbekannte Benachrichtigs-Bewilligigstatus";
-"reminderTitle" = "Erinnerig: %@";
-"deadlineTitle" = "Endtermin: %@";
-"notificationBody" = "Priorität: %@ - Kategorie: %@\nDetail: %@";
-"errorSchedulingNotification" = "Fähler bim Terminierä vo de Benachrichtig";
-"notificationScheduled" = "Benachrichtig isch für %@ um %@ geplant";
+"errorRequestingAuthorization" = "Fehler bei der Anforderungsautorisierung";
+"notificationAuthorizationGranted" = "Benachrichtigungsberechtigung erteilt";
+"notificationAuthorizationDenied" = "Benachrichtigungsberechtigung abgelehnt";
+"notificationAuthorizationNotDetermined" = "Benachrichtigungsberechtigung nicht bestimmt";
+"notificationAuthorizationProvisional" = "Provisorische Benachrichtigungsberechtigung";
+"notificationAuthorizationEphemeral" = "Ephemere Benachrichtigungsberechtigung";
+"notificationAuthorizationUnknown" = "Unbekannter Benachrichtigungsstatus";
+"reminderTitle" = "Erinnerung: %@";
+"deadlineTitle" = "Frist: %@";
+"notificationBody" = "Priorität: %@ - Kategorie: %@\nDetails: %@";
+"errorSchedulingNotification" = "Fehler bei der Planung der Benachrichtigung";
+"notificationScheduled" = "Benachrichtigung geplant für %@ um %@";
 
 "language" = "Sprache";
 "selectLanguage" = "Sprache auswählen";

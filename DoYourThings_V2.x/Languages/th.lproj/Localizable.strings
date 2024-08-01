@@ -111,3 +111,6 @@
 "notificationBody" = "ลำดับความสำคัญ: %@ - หมวดหมู่: %@\nรายละเอียด: %@";
 "errorSchedulingNotification" = "ข้อผิดพลาดในการกำหนดการแจ้งเตือน";
 "notificationScheduled" = "การแจ้งเตือนถูกกำหนดเวลาไว้สำหรับ %@ ที่ %@";
+
+"language" = "ภาษา";
+"selectLanguage" = "เลือกภาษา";

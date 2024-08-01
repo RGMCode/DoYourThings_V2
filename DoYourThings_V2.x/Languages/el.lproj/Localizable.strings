@@ -111,3 +111,6 @@
 "notificationBody" = "Προτεραιότητα: %@ - Κατηγορία: %@\nΛεπτομέρειες: %@";
 "errorSchedulingNotification" = "Σφάλμα στον προγραμματισμό ειδοποίησης";
 "notificationScheduled" = "Η ειδοποίηση προγραμματίστηκε για τις %@ στις %@";
+
+"language" = "Γλώσσα";
+"selectLanguage" = "Επιλέξτε γλώσσα";

@@ -111,3 +111,6 @@
 "notificationBody" = "Prioriteit: %@ - Categorie: %@\nDetails: %@";
 "errorSchedulingNotification" = "Fout bie 't plannen van de melding";
 "notificationScheduled" = "Melding gepland veur %@ om %@";
+
+"language" = "Taal";
+"selectLanguage" = "Selecteer taal";

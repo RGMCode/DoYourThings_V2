@@ -111,3 +111,6 @@
 "notificationBody" = "우선순위: %@ - 카테고리: %@\n세부사항: %@";
 "errorSchedulingNotification" = "알림 예약 오류";
 "notificationScheduled" = "알림이 %@에 %@에 예약되었습니다";
+
+"language" = "언어";
+"selectLanguage" = "언어 선택";

@@ -111,3 +111,6 @@
 "notificationBody" = "Prioridade: %@ - Categoria: %@\nDetalhes: %@";
 "errorSchedulingNotification" = "Erro ao agendar notificação";
 "notificationScheduled" = "Notificação agendada para %@ às %@";
+
+"language" = "Língua";
+"selectLanguage" = "Selecionar Língua";

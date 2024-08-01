@@ -111,3 +111,6 @@
 "notificationBody" = "प्राथमिकता: %@ - श्रेणी: %@\nविवरण: %@";
 "errorSchedulingNotification" = "सूचना अनुसूचीबद्ध करने में त्रुटि";
 "notificationScheduled" = "सूचना %@ पर %@ बजे निर्धारित की गई";
+
+"language" = "भाषा";
+"selectLanguage" = "भाषा चुनें";

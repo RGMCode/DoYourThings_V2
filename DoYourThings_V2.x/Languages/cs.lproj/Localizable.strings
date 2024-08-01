@@ -111,3 +111,6 @@
 "notificationBody" = "Priorita: %@ - Kategorie: %@\nDetaily: %@";
 "errorSchedulingNotification" = "Chyba při plánování oznámení";
 "notificationScheduled" = "Oznámení naplánováno na %@ v %@";
+
+"language" = "Jazyk";
+"selectLanguage" = "Vyberte jazyk";

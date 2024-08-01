@@ -111,3 +111,6 @@
 "notificationBody" = "Priority: %@ - Category: %@\nDetails: %@";
 "errorSchedulingNotification" = "Error scheduling notification";
 "notificationScheduled" = "Notification scheduled for %@ at %@";
+
+"language" = "Language";
+"selectLanguage" = "Select Language";

@@ -111,3 +111,6 @@
 "notificationBody" = "Prioritate: %@ - Categorie: %@\nDetalii: %@";
 "errorSchedulingNotification" = "Eroare la programarea notificării";
 "notificationScheduled" = "Notificare programată pentru %@ la %@";
+
+"language" = "Limbă";
+"selectLanguage" = "Selectați limba";

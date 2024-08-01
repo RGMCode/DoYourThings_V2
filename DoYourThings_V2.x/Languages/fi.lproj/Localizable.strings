@@ -111,3 +111,6 @@
 "notificationBody" = "Prioriteetti: %@ - Luokka: %@\nYksityiskohdat: %@";
 "errorSchedulingNotification" = "Virhe ajoittaessa ilmoitusta";
 "notificationScheduled" = "Ilmoitus ajoitettu päivämäärälle %@ klo %@";
+
+"language" = "Kieli";
+"selectLanguage" = "Valitse kieli";

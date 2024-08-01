@@ -111,3 +111,6 @@
 "notificationBody" = "Priorytet: %@ - Kategoria: %@\nSzczegóły: %@";
 "errorSchedulingNotification" = "Błąd podczas planowania powiadomienia";
 "notificationScheduled" = "Powiadomienie zaplanowane na %@ o %@";
+
+"language" = "Język";
+"selectLanguage" = "Wybierz język";

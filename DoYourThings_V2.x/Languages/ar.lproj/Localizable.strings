@@ -111,3 +111,6 @@
 "notificationBody" = "الأولوية: %@ - الفئة: %@\nالتفاصيل: %@";
 "errorSchedulingNotification" = "خطأ في جدولة الإشعار";
 "notificationScheduled" = "تم جدولة الإشعار في %@ الساعة %@";
+
+"language" = "لغة";
+"selectLanguage" = "اختر اللغة";

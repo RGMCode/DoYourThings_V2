@@ -111,3 +111,6 @@
 "notificationBody" = "Prioritas: %@ - Kategori: %@\nDetail: %@";
 "errorSchedulingNotification" = "Kesalahan saat menjadwalkan notifikasi";
 "notificationScheduled" = "Notifikasi dijadwalkan untuk %@ pada %@";
+
+"language" = "Bahasa";
+"selectLanguage" = "Pilih Bahasa";

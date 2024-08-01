@@ -111,3 +111,6 @@
 "notificationBody" = "優先度: %@ - カテゴリ: %@\n詳細: %@";
 "errorSchedulingNotification" = "通知スケジューリングエラー";
 "notificationScheduled" = "通知が%@の%@にスケジュールされました";
+
+"language" = "言語";
+"selectLanguage" = "言語を選択";

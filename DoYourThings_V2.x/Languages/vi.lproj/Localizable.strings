@@ -111,3 +111,6 @@
 "notificationBody" = "Ưu tiên: %@ - Danh mục: %@\nChi tiết: %@";
 "errorSchedulingNotification" = "Lỗi khi lên lịch thông báo";
 "notificationScheduled" = "Thông báo được lên lịch vào %@ lúc %@";
+
+"language" = "Ngôn ngữ";
+"selectLanguage" = "Chọn ngôn ngữ";

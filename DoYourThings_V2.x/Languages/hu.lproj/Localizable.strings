@@ -111,3 +111,6 @@
 "notificationBody" = "Prioritás: %@ - Kategória: %@\nRészletek: %@";
 "errorSchedulingNotification" = "Hiba történt az értesítés ütemezésekor";
 "notificationScheduled" = "Értesítés ütemezve: %@ %@-kor";
+
+"language" = "Nyelv";
+"selectLanguage" = "Nyelv kiválasztása";

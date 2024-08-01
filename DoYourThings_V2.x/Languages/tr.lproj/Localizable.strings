@@ -111,3 +111,6 @@
 "notificationBody" = "Öncelik: %@ - Kategori: %@\nDetaylar: %@";
 "errorSchedulingNotification" = "Bildirim planlama hatası";
 "notificationScheduled" = "Bildirim %@ tarihinde %@'de planlandı";
+
+"language" = "Dil";
+"selectLanguage" = "Dil seçin";

@@ -109,3 +109,6 @@
 "notificationBody" = "Prioridad: %@ - Categoría: %@\nDetalles: %@";
 "errorSchedulingNotification" = "Error al programar la notificación";
 "notificationScheduled" = "Notificación programada para %@ a las %@";
+
+"language" = "Idioma";
+"selectLanguage" = "Seleccionar idioma";

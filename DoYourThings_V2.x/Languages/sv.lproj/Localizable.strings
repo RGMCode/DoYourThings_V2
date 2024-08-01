@@ -111,3 +111,6 @@
 "notificationBody" = "Prioritet: %@ - Kategori: %@\nDetaljer: %@";
 "errorSchedulingNotification" = "Fel vid schemaläggning av meddelande";
 "notificationScheduled" = "Meddelande schemalagt till %@ kl. %@";
+
+"language" = "Språk";
+"selectLanguage" = "Välj språk";

@@ -111,3 +111,6 @@
 "notificationBody" = "優先級：%@ - 類別：%@\n詳情：%@";
 "errorSchedulingNotification" = "計劃通知時出錯";
 "notificationScheduled" = "通知已計劃於%@的%@";
+
+"language" = "語言";
+"selectLanguage" = "選擇語言";

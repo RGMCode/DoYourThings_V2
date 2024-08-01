@@ -111,3 +111,6 @@
 "notificationBody" = "Prioritet: %@ - Kategori: %@\nDetaljer: %@";
 "errorSchedulingNotification" = "Feil ved planlegging av varsel";
 "notificationScheduled" = "Varsel planlagt til %@ kl. %@";
+
+"language" = "Språk";
+"selectLanguage" = "Velg språk";

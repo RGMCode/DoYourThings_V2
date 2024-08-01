@@ -109,3 +109,6 @@
 "notificationBody" = "Prioritet: %@ - Kategori: %@\nDetaljer: %@";
 "errorSchedulingNotification" = "Fejl ved planlægning af notifikation";
 "notificationScheduled" = "Notifikation planlagt til %@ kl. %@";
+
+"language" = "Sprog";
+"selectLanguage" = "Vælg sprog";
