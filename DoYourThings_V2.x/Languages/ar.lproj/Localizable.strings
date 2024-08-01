@@ -1,0 +1,113 @@
+/* 
+  Localizable.strings
+  DoYourThings_V2.x
+
+  Created by RGMCode on 01.08.24.
+  
+*/
+"chooseTheme" = "اختر الثيم";
+"theme" = "الثيم";
+"light" = "فاتح";
+"dark" = "داكن";
+"chooseIconColor" = "اختر لون الأيقونة:";
+"themeChoice" = "اختيار الثيم";
+"veryHighDescription" = "عالية جداً = أحمر\nالمهام العاجلة والهامة التي تتطلب انتباهًا فوريًا.";
+"highDescription" = "عالية = برتقالي\nالمهام الهامة التي تحتاج إلى إتمامها بسرعة، ولكنها ليست عاجلة مثل 'عالية جداً'.";
+"mediumDescription" = "متوسطة = أصفر\nالمهام ذات الأهمية المتوسطة التي يجب إتمامها في إطار زمني معقول.";
+"lowDescription" = "منخفضة = أخضر\nالمهام الأقل أهمية التي يجب إتمامها عندما يكون هناك وقت متاح.";
+"veryLowDescription" = "منخفضة جداً = أزرق\nالمهام ذات الأهمية المنخفضة التي يمكن إتمامها في أوقات الفراغ.";
+"categoryName" = "اسم الفئة";
+"categoryColor" = "لون الفئة";
+"addCategory" = "إضافة فئة";
+"editCategory" = "تحرير الفئة";
+"name" = "الاسم";
+"color" = "اللون";
+"save" = "حفظ";
+"delete" = "حذف";
+"deleteCategory" = "حذف الفئة";
+"deleteCategoryConfirmation" = "هل أنت متأكد أنك تريد حذف الفئة %@؟";
+"manageCategories" = "إدارة الفئات";
+"searchPlaceholder" = "بحث...";
+"date" = "التاريخ";
+"time" = "الوقت";
+"category" = "الفئة";
+"priority" = "الأولوية";
+"reminder" = "تذكير";
+"deadline" = "الموعد النهائي";
+"title" = "العنوان";
+"edit" = "تحرير";
+"exampleTitle" = "عنوان مثال";
+"exampleDetailText" = "نص تفصيلي مثال";
+"medium" = "متوسطة";
+"privateCategory" = "خاص";
+"detail" = "التفاصيل";
+"addTask" = "إضافة مهمة";
+"newTask" = "مهمة جديدة";
+"chooseDate" = "اختر التاريخ";
+"continue" = "متابعة";
+"done" = "تم";
+"cancel" = "إلغاء";
+"settings" = "الإعدادات";
+"deleteTaskTitle" = "حذف المهمة";
+"deleteTaskMessage" = "هل أنت متأكد أنك تريد حذف هذه المهمة؟";
+"deleteButton" = "حذف";
+"veryHigh" = "عالية جداً";
+"high" = "عالية";
+"low" = "منخفضة";
+"veryLow" = "منخفضة جداً";
+"workCategory" = "عمل";
+"selectedCategoryPrivate" = "خاص";
+"filterByDateAndPriority" = "حسب التاريخ والأولوية";
+"filter" = "تصفية";
+"choose_filter_option" = "اختر خيار التصفية";
+"by_date_and_priority" = "حسب التاريخ والأولوية";
+"by_priority_and_date" = "حسب الأولوية والتاريخ";
+"by_reminder" = "حسب التذكير";
+"by_deadline" = "حسب الموعد النهائي";
+"overdue_tasks" = "المهام المتأخرة";
+"task_management" = "إدارة المهام";
+"create_edit_delete_tasks" = "إنشاء المهام وتحريرها وحذفها بسهولة. يمكن لكل مهمة أن تحتوي على عنوان ووصف تفصيلي ومستوى أولوية وفئة لضمان وجود جميع المعلومات الضرورية في مكان واحد.";
+"categories" = "الفئات";
+"organize_tasks" = "نظم المهام الخاصة بك في فئات مخصصة مثل 'خاص' و'عمل'. هذا يسمح لك بترتيب المهام بوضوح والوصول السريع إلى المهام الأكثر أهمية.";
+"prioritization" = "تحديد الأولويات";
+"assign_priorities" = "تحديد الأولويات لمهامك لضمان التركيز على المهام الأكثر أهمية وإلحاحًا. تساعد الأولويات المشفرة بالألوان على رؤية مدى إلحاح كل مهمة بنظرة واحدة:";
+"very_high_priority" = "عالية جداً (أحمر): المهام العاجلة والهامة التي تتطلب انتباهًا فوريًا.";
+"high_priority" = "عالية (برتقالي): المهام الهامة التي تحتاج إلى إتمامها بسرعة.";
+"medium_priority" = "متوسطة (أصفر): المهام ذات الأهمية المتوسطة التي يجب إتمامها في إطار زمني معقول.";
+"low_priority" = "منخفضة (أخضر): المهام الأقل أهمية التي يجب إتمامها عندما يكون هناك وقت متاح.";
+"very_low_priority" = "منخفضة جداً (أزرق): المهام ذات الأهمية المنخفضة التي يمكن إتمامها في أوقات الفراغ.";
+"color_customization" = "تخصيص الألوان";
+"personalize_app" = "خصص التطبيق من خلال ضبط ألوان الفئات الخاصة بك. هذا يوفر تجربة مستخدم جذابة بصريًا ومخصصة.";
+"theme_selection" = "اختيار الثيم";
+"toggle_light_dark" = "التبديل بين الوضع الفاتح والداكن لتناسب تفضيلاتك وضمان تجربة مستخدم مريحة في ظروف الإضاءة المختلفة.";
+"search_function" = "وظيفة البحث";
+"find_tasks" = "العثور بسرعة وسهولة على أي مهمة باستخدام وظيفة البحث القوية. فقط أدخل العنوان أو جزءًا من الوصف لعرض المهام المطلوبة.";
+"detailed_views" = "عرض التفاصيل";
+"view_task_details" = "عرض تفاصيل كل مهمة في عرض منفصل لضمان وجود جميع المعلومات الضرورية في متناول اليد.";
+"notifications" = "الإشعارات";
+"timely_notifications" = "تلقي الإشعارات في الوقت المناسب لتجنب فقدان المهام الهامة. يمكنك تعيين التذكيرات والمواعيد النهائية لكل مهمة لضمان تذكيرك دائمًا بالمهام القادمة. تم تصميم الإشعارات لمساعدتك على إدارة المهام بكفاءة وضمان عدم تفويت أي شيء.";
+"filters" = "التصفية";
+"overview_filters" = "تتبع المهام الخاصة بك باستخدام خيارات التصفية القوية. فرز المهام حسب معايير مختلفة للعثور بسرعة على الأكثر صلة:";
+"overdue_tasks" = "المهام المتأخرة";
+
+"language" = "لغة";
+"selectLanguage" = "اختر اللغة";
+
+"manageCategories" = "إدارة الفئات";
+"chooseTheme" = "اختر السمة";
+"settings" = "الإعدادات";
+"language" = "اللغة";
+"chooseLanguage" = "اختر اللغة";
+
+"errorRequestingAuthorization" = "خطأ في طلب التفويض";
+"notificationAuthorizationGranted" = "تم منح تفويض الإشعار";
+"notificationAuthorizationDenied" = "تم رفض تفويض الإشعار";
+"notificationAuthorizationNotDetermined" = "لم يتم تحديد تفويض الإشعار";
+"notificationAuthorizationProvisional" = "تم منح تفويض الإشعار المؤقت";
+"notificationAuthorizationEphemeral" = "تم منح تفويض الإشعار القصير الأجل";
+"notificationAuthorizationUnknown" = "حالة تفويض الإشعار غير معروفة";
+"reminderTitle" = "تذكير: %@";
+"deadlineTitle" = "الموعد النهائي: %@";
+"notificationBody" = "الأولوية: %@ - الفئة: %@\nالتفاصيل: %@";
+"errorSchedulingNotification" = "خطأ في جدولة الإشعار";
+"notificationScheduled" = "تم جدولة الإشعار في %@ الساعة %@";

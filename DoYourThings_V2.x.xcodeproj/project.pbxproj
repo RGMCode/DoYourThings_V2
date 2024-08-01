@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		369C6FC42C5823E6008243EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369C6FC32C5823E6008243EE /* AppDelegate.swift */; };
 		369C6FC62C582408008243EE /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369C6FC52C582408008243EE /* NotificationManager.swift */; };
+		369C6FE62C5ACBD6008243EE /* DoYourThingModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 369C6FE42C5ACBD6008243EE /* DoYourThingModel.xcdatamodeld */; };
+		369C70172C5B071E008243EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 369C70152C5B071E008243EE /* Localizable.strings */; };
 		36ABC2672C4480720084CEF8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ABC2662C4480720084CEF8 /* UIColorExtension.swift */; };
 		36ABC26B2C45B42B0084CEF8 /* DoYourThingPriorityInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ABC26A2C45B42B0084CEF8 /* DoYourThingPriorityInformationView.swift */; };
 		36BB19612C42B191006E2C78 /* DoYourThings_V2_xApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19602C42B191006E2C78 /* DoYourThings_V2_xApp.swift */; };
@@ -24,7 +26,6 @@
 		36BB199B2C42B336006E2C78 /* DoYourThingSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB199A2C42B336006E2C78 /* DoYourThingSettingView.swift */; };
 		36BB199D2C42B349006E2C78 /* DoYourThingManageCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB199C2C42B349006E2C78 /* DoYourThingManageCategoriesView.swift */; };
 		36BB199F2C42B3AF006E2C78 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB199E2C42B3AF006E2C78 /* PersistenceController.swift */; };
-		36BB19A32C42BC0F006E2C78 /* DoYourThingModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19A12C42BC0F006E2C78 /* DoYourThingModel.xcdatamodeld */; };
 		36BB19A72C42C0D4006E2C78 /* DoYourThingEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19A62C42C0D4006E2C78 /* DoYourThingEditView.swift */; };
 		36BB19A92C4313AC006E2C78 /* DoYourThingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19A82C4313AC006E2C78 /* DoYourThingViewModelTests.swift */; };
 		36BB19AD2C445E0B006E2C78 /* DoYourThingCategoriesEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB19AC2C445E0B006E2C78 /* DoYourThingCategoriesEditView.swift */; };
@@ -55,6 +56,21 @@
 /* Begin PBXFileReference section */
 		369C6FC32C5823E6008243EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		369C6FC52C582408008243EE /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		369C6FE52C5ACBD6008243EE /* DoYourThingModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoYourThingModel.xcdatamodel; sourceTree = "<group>"; };
+		369C70162C5B071E008243EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		369C70192C5B0785008243EE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		369C701A2C5B07F5008243EE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		369C701B2C5B0816008243EE /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
+		369C701C2C5B0847008243EE /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		369C701D2C5B0870008243EE /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		369C701E2C5B08C1008243EE /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		369C701F2C5B0902008243EE /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		369C70202C5B092B008243EE /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		369C70212C5B0959008243EE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		369C70222C5B097C008243EE /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		369C70232C5B099C008243EE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		369C70242C5B09C7008243EE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		369C70252C5B0A01008243EE /* en-AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-AU"; path = "en-AU.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		36ABC2662C4480720084CEF8 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		36ABC26A2C45B42B0084CEF8 /* DoYourThingPriorityInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingPriorityInformationView.swift; sourceTree = "<group>"; };
 		36BB195D2C42B191006E2C78 /* DoYourThings_V2.x.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoYourThings_V2.x.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +90,6 @@
 		36BB199A2C42B336006E2C78 /* DoYourThingSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingSettingView.swift; sourceTree = "<group>"; };
 		36BB199C2C42B349006E2C78 /* DoYourThingManageCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingManageCategoriesView.swift; sourceTree = "<group>"; };
 		36BB199E2C42B3AF006E2C78 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		36BB19A22C42BC0F006E2C78 /* DoYourThingModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoYourThingModel.xcdatamodel; sourceTree = "<group>"; };
 		36BB19A62C42C0D4006E2C78 /* DoYourThingEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingEditView.swift; sourceTree = "<group>"; };
 		36BB19A82C4313AC006E2C78 /* DoYourThingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingViewModelTests.swift; sourceTree = "<group>"; };
 		36BB19AC2C445E0B006E2C78 /* DoYourThingCategoriesEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYourThingCategoriesEditView.swift; sourceTree = "<group>"; };
@@ -128,6 +143,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		369C70182C5B0725008243EE /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				369C70152C5B071E008243EE /* Localizable.strings */,
+			);
+			path = Languages;
+			sourceTree = "<group>";
+		};
 		36ABC2652C44805C0084CEF8 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +183,7 @@
 		36BB195F2C42B191006E2C78 /* DoYourThings_V2.x */ = {
 			isa = PBXGroup;
 			children = (
+				369C70182C5B0725008243EE /* Languages */,
 				369C6FC22C5823CB008243EE /* Services */,
 				3610F4B42C46F63100DB2F76 /* CustomStyle */,
 				36ABC2652C44805C0084CEF8 /* Extension */,
@@ -237,7 +261,7 @@
 		36BB19922C42B224006E2C78 /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
-				36BB19A12C42BC0F006E2C78 /* DoYourThingModel.xcdatamodeld */,
+				369C6FE42C5ACBD6008243EE /* DoYourThingModel.xcdatamodeld */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -328,6 +352,19 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				ar,
+				ca,
+				"zh-HK",
+				da,
+				hr,
+				cs,
+				nl,
+				fr,
+				"fr-CA",
+				"zh-Hans",
+				"zh-Hant",
+				"en-AU",
 			);
 			mainGroup = 36BB19542C42B191006E2C78;
 			productRefGroup = 36BB195E2C42B191006E2C78 /* Products */;
@@ -347,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36BB19682C42B192006E2C78 /* Preview Assets.xcassets in Resources */,
+				369C70172C5B071E008243EE /* Localizable.strings in Resources */,
 				36BB19652C42B192006E2C78 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,7 +411,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36BB19B32C446EA8006E2C78 /* DoYourThingThemeChoiceView.swift in Sources */,
-				36BB19A32C42BC0F006E2C78 /* DoYourThingModel.xcdatamodeld in Sources */,
 				36BB19992C42B2FB006E2C78 /* DoYourThingAddView.swift in Sources */,
 				36BB19AF2C44692F006E2C78 /* DoYourThingSearchView.swift in Sources */,
 				36ABC2672C4480720084CEF8 /* UIColorExtension.swift in Sources */,
@@ -388,6 +425,7 @@
 				36BB19B12C446E3E006E2C78 /* DoYourThingCategoriesAddView.swift in Sources */,
 				36BB19632C42B191006E2C78 /* ContentView.swift in Sources */,
 				36BB19612C42B191006E2C78 /* DoYourThings_V2_xApp.swift in Sources */,
+				369C6FE62C5ACBD6008243EE /* DoYourThingModel.xcdatamodeld in Sources */,
 				36ABC26B2C45B42B0084CEF8 /* DoYourThingPriorityInformationView.swift in Sources */,
 				36BB19AD2C445E0B006E2C78 /* DoYourThingCategoriesEditView.swift in Sources */,
 				369C6FC62C582408008243EE /* NotificationManager.swift in Sources */,
@@ -428,12 +466,37 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		369C70152C5B071E008243EE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				369C70162C5B071E008243EE /* en */,
+				369C70192C5B0785008243EE /* de */,
+				369C701A2C5B07F5008243EE /* ar */,
+				369C701B2C5B0816008243EE /* ca */,
+				369C701C2C5B0847008243EE /* zh-HK */,
+				369C701D2C5B0870008243EE /* da */,
+				369C701E2C5B08C1008243EE /* hr */,
+				369C701F2C5B0902008243EE /* cs */,
+				369C70202C5B092B008243EE /* nl */,
+				369C70212C5B0959008243EE /* fr */,
+				369C70222C5B097C008243EE /* fr-CA */,
+				369C70232C5B099C008243EE /* zh-Hans */,
+				369C70242C5B09C7008243EE /* zh-Hant */,
+				369C70252C5B0A01008243EE /* en-AU */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		36BB197F2C42B193006E2C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -497,6 +560,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -738,14 +802,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		36BB19A12C42BC0F006E2C78 /* DoYourThingModel.xcdatamodeld */ = {
+		369C6FE42C5ACBD6008243EE /* DoYourThingModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				36BB19A22C42BC0F006E2C78 /* DoYourThingModel.xcdatamodel */,
+				369C6FE52C5ACBD6008243EE /* DoYourThingModel.xcdatamodel */,
 			);
-			currentVersion = 36BB19A22C42BC0F006E2C78 /* DoYourThingModel.xcdatamodel */;
+			currentVersion = 369C6FE52C5ACBD6008243EE /* DoYourThingModel.xcdatamodel */;
 			name = DoYourThingModel.xcdatamodeld;
-			path = /Users/mrg/Projects/Swift_Projects/DoYourThings_V2.x/DoYourThings_V2.x/DataBase/DoYourThingModel.xcdatamodeld;
+			path = /Users/mrg/Projects/Swift_Projects/DoYourThings_V2.1.1/DoYourThings_V2.x/DataBase/DoYourThingModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
